@@ -1,9 +1,7 @@
 import React, {useState, useEffect} from 'react'
-import LinearProgress from "@material-ui/core/LinearProgress";
 import Button from "@material-ui/core/Button";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import Slider from "@material-ui/core/Slider";
-import Backdrop from "@material-ui/core/Backdrop";
 import clsx from "clsx"
 import Grid from "@material-ui/core/Grid";
 import axios from "axios";
@@ -13,19 +11,17 @@ import FormControl from "@material-ui/core/FormControl";
 import CircularProgress from "@material-ui/core/CircularProgress";
 import { green } from "@material-ui/core/colors";
 import OutlinedInput from "@material-ui/core/OutlinedInput";
-import IconButton from "@material-ui/core/IconButton";
-import ShuffleIcon from "@material-ui/icons/Shuffle";
-import InputAdornment from "@material-ui/core/InputAdornment";
 import { makeStyles, withStyles } from "@material-ui/core/styles";
+import orange from "@material-ui/core/colors/orange";
+import logo from "../assets/Project_Logo_Icons/Project_Logo.png"
 
-const logo = require('./icon.png');
 
 const iOSBoxShadow =
   '0 3px 1px rgba(0,0,0,0.1),0 4px 8px rgba(0,0,0,0.13),0 0 0 1px rgba(0,0,0,0.02)';
 
 const LengthSlider = withStyles({
   root: {
-    color: '#3880ff',
+    color: 'orange',
     height: 2,
     padding: '15px 0',
   },
@@ -89,7 +85,8 @@ const LengthSlider = withStyles({
     },
     paper: {
       margin: theme.spacing(8, 4),
-      height: "10%"
+      height: "10%",
+      alignItems: "center"
     },
     avatar: {
       margin: theme.spacing(1),
@@ -113,12 +110,12 @@ const LengthSlider = withStyles({
       // width: '25ch',
     },
     slider: {
-      marginTop: "60px",
+      marginTop: "30px",
       width: "100%",
       // boxSizing: "border-box",
     },
     sliderLabel: {
-      marginTop: "5px",
+      marginTop: "10px",
     },
     buttonProgress: {
       color: green[500],
@@ -139,7 +136,18 @@ const LengthSlider = withStyles({
         marginTop: theme.spacing(2),
       },
     },
-  }));
+    containedOrange: {
+      color: theme.palette.getContrastText(orange[500]),
+      margin: theme.spacing(3, 0, 2),
+      backgroundColor: orange[500],
+      "&:hover": {
+        backgroundColor: orange[700],
+        // Reset on touch devices, it doesn't add specificity
+        "@media (hover: none)": {
+          backgroundColor: orange[500]
+        }
+      },
+  }}));
 
   const headers = {
     'Content-Type': 'text/plain'
@@ -185,7 +193,7 @@ function QuoteGenerator() {
       setQuote("");
         setAuthor("");
         axios
-          .get("https://quotify-engine-l6lhxur2aq-uc.a.run.app/generate/" +  str  + "/" + minLength + "/" + maxLength + "/0.5"
+          .get("https://quotify-engine-l6lhxur2aq-uc.a.run.app/generate/" +  str  + "/" + minLength + "/" + maxLength + "/0.9"
           )
           .then(function (response) {
             console.log("Response in submit: " + response["data"]["output"]);
@@ -235,7 +243,7 @@ function QuoteGenerator() {
         getRandomImage();
         const str = nextSeed.length == 0 ? tagList[Math.floor(Math.random() * tagList.length )] : nextSeed 
         axios
-          .get("https://quotify-engine-l6lhxur2aq-uc.a.run.app/generate/" +  str  + "/" + minLength + "/" + maxLength + "/0.5/")
+          .get("https://quotify-engine-l6lhxur2aq-uc.a.run.app/generate/" +  str  + "/" + minLength + "/" + maxLength + "/0.9/")
               .then(function (response) {
                 setQuote(response["data"]["output"]);
                 setAuthor("Quotify");
@@ -298,28 +306,26 @@ function QuoteGenerator() {
                   />
                 </div>
               ) : (
-                <p class="text" style={{opacity:"100%", color:"white", fontSize: "36px" }}>{quote}</p>
+                <p class="text" style={{paddingLeft: "20px", paddingRight: "20px", opacity:"100%", color:"white", fontSize: "36px" }}>{quote}</p>
               )}
+              <div alignText = "right">
               <p class="attr" style={{alignText: "right",  color:"white", fontSize: "30px"}}>- Quotify</p>
               {/* <hr class="line" /> */}
+              </div>
             </div>
           </section>
         </Grid>
         <Grid item 
         className={classes.paper}
         >
-          {/* <Backdrop className={classes.backdrop} open={modelLoading}>
-            <Typography variant="overline">Fetching {modelName}...</Typography>
-            <LinearProgress className={classes.progressModel} color="primary" />
-          </Backdrop> */}
-          <div >
-            <img src={logo}  alt="Quotify"/>
+          <div display="flex" alignItems="center" justify="center">
+            <img src={logo} alt="Quotify" width="30%" marginLeft="30%"/>
             <div style ={{"display": "flex", width:"100%"}}>
               
             <form className={classes.form} noValidate onSubmit={handleSubmit}> 
             <FormControl fullWidth className={clsx(classes.margin, classes.textField)}>
                 <InputLabel htmlFor="seed" 
-                style={{fontSize:"20px", marginLeft: "1.5%", marginTop: "0.3%"}}
+                style={{fontSize:"20px", marginLeft: "1%", marginTop: "0.3%"}}
                 >
                   Leave a phrase and let Quotify blow your mind
                 </InputLabel>
@@ -378,13 +384,11 @@ function QuoteGenerator() {
                     </FormControl>
               </FormControl>
               <FormControl fullWidth >
-                <Button
+                <Button className = {classes.containedOrange}
                   type="submit"
                   fullWidth
-                  variant="contained"
-                  color="primary"
                   disabled={generatingQuote}
-                  className={classes.submit}
+                  
                 >
                   Generate Quote
                 </Button>
