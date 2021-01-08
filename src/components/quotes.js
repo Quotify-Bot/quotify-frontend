@@ -85,11 +85,11 @@ const LengthSlider = withStyles({
           : theme.palette.grey[900],
       backgroundSize: "cover",
       backgroundPosition: "fill",
-      height: "71.6%",
+      height: "73%",
     },
     paper: {
       margin: theme.spacing(8, 4),
-      height: "15%"
+      height: "10%"
     },
     avatar: {
       margin: theme.spacing(1),
@@ -145,6 +145,8 @@ const LengthSlider = withStyles({
     'Content-Type': 'text/plain'
 };
 
+const tagList = ["When I", "I am going to be the best", "Life finds a way", "Who knew", "Small steps", "Okay I"]
+
 function QuoteGenerator() {
     const unsplashApi = "https://api.unsplash.com/photos/random";
 
@@ -163,7 +165,7 @@ function QuoteGenerator() {
     const [modelName, setModelName] = React.useState(
         keys[Math.floor(Math.random() * keys.length)]
     );
-    const [nextSeed, setNextSeed] = React.useState(" ");
+    const [nextSeed, setNextSeed] = React.useState("");
     const [genSeed, setGenSeed] = React.useState("");
     const [bgImage, setBgImage] = useState("")
     const [quote, setQuote] = useState("")
@@ -179,10 +181,11 @@ function QuoteGenerator() {
       setGeneratingQuote(true)
       setLoadingSeed(true);
       getRandomImage();  
+      const str = nextSeed.length == 0 ? tagList[Math.floor(Math.random() * tagList.length )] : nextSeed 
       setQuote("");
         setAuthor("");
         axios
-          .get("https://quotify-engine-l6lhxur2aq-uc.a.run.app/generate/" + nextSeed + "/" + minLength + "/" + maxLength + "/0.5"
+          .get("https://quotify-engine-l6lhxur2aq-uc.a.run.app/generate/" +  str  + "/" + minLength + "/" + maxLength + "/0.5"
           )
           .then(function (response) {
             console.log("Response in submit: " + response["data"]["output"]);
@@ -230,8 +233,9 @@ function QuoteGenerator() {
         setGeneratingQuote(true);
         setLoadingSeed(true)
         getRandomImage();
+        const str = nextSeed.length == 0 ? tagList[Math.floor(Math.random() * tagList.length )] : nextSeed 
         axios
-          .get("https://quotify-engine-l6lhxur2aq-uc.a.run.app/generate/" + nextSeed + "/" + minLength + "/" + maxLength + "/0.5/")
+          .get("https://quotify-engine-l6lhxur2aq-uc.a.run.app/generate/" +  str  + "/" + minLength + "/" + maxLength + "/0.5/")
               .then(function (response) {
                 setQuote(response["data"]["output"]);
                 setAuthor("Quotify");
@@ -277,8 +281,8 @@ function QuoteGenerator() {
           className={classes.image}
           style={{ backgroundImage: "url(" + bgImage + ")" }}
         >
-          <section>
-            <div class="quote" style = {{textAlign: "center", alignItems:"center", backgroundColor:"black", opacity:"0.6"}}>
+          <section >
+            <div class="quote" padding="50px" style = {{textAlign: "center", margin: "70px", alignItems:"center", backgroundColor:"black", opacity:"0.6"}}>
               <hr class="line" />
               {generatingQuote ? (
                 <div>
@@ -304,17 +308,19 @@ function QuoteGenerator() {
         <Grid item 
         className={classes.paper}
         >
-          <Backdrop className={classes.backdrop} open={modelLoading}>
+          {/* <Backdrop className={classes.backdrop} open={modelLoading}>
             <Typography variant="overline">Fetching {modelName}...</Typography>
             <LinearProgress className={classes.progressModel} color="primary" />
-          </Backdrop>
+          </Backdrop> */}
           <div >
             <img src={logo}  alt="Quotify"/>
             <div style ={{"display": "flex", width:"100%"}}>
               
             <form className={classes.form} noValidate onSubmit={handleSubmit}> 
             <FormControl fullWidth className={clsx(classes.margin, classes.textField)}>
-                <InputLabel htmlFor="seed" style={{fontSize:"20px", marginLeft: "1%", marginTop: "1%"}}>
+                <InputLabel htmlFor="seed" 
+                style={{fontSize:"20px", marginLeft: "1.5%", marginTop: "0.3%"}}
+                >
                   Leave a phrase and let Quotify blow your mind
                 </InputLabel>
                 <OutlinedInput
@@ -322,21 +328,6 @@ function QuoteGenerator() {
                   type="text"
                   value={nextSeed}
                   onChange={handleSeedChange}
-                  endAdornment={
-                    <InputAdornment position="end">
-                      <IconButton
-                        aria-label="shuffle"
-                        color="primary"
-                        onClick={handleSubmit}
-                      >
-                        {loadingSeed ? (
-                          <CircularProgress size={30} />
-                        ) : (
-                          <ShuffleIcon />
-                        )}
-                      </IconButton>
-                    </InputAdornment>
-                  }
                 />
                 </FormControl>
               <FormControl fullWidth>
@@ -386,9 +377,7 @@ function QuoteGenerator() {
                       />
                     </FormControl>
               </FormControl>
-              <FormControl fullWidth 
-              // className={clsx(classes.margin)}
-              >
+              <FormControl fullWidth >
                 <Button
                   type="submit"
                   fullWidth
