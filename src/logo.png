@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<!-- saved from url=(0113)https://www.vectorstock.com/royalty-free-vector/light-bulb-with-rays-shine-energy-and-idea-symbol-vector-23707941 -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="csrf-name" content="csrf5ff68d7feb9e3">
+	<meta name="csrf-value" content="dc904078fbe3dd5ceccaf9c3781ee501">
+	<script type="text/javascript" src="./logo_files/02e09611df"></script><script src="./logo_files/nr-1184.min.js.download"></script><script type="text/javascript" async="" src="./logo_files/linkid.js.download"></script><script async="" src="./logo_files/analytics.js.download"></script><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"02e09611df",applicationID:"156179534"};window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var i=t[n]={exports:{}};e[n][0].call(i.exports,function(t){var i=e[n][1][t];return r(i||t)},i,i.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<n.length;i++)r(n[i]);return r}({1:[function(e,t,n){function r(){}function i(e,t,n){return function(){return o(e,[u.now()].concat(c(arguments)),t?null:this,n),t?void 0:this}}var o=e("handle"),a=e(6),c=e(7),f=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],p="api-",l=p+"ixn-";a(d,function(e,t){s[t]=i(p+t,!0,"api")}),s.addPageAction=i(p+"addPageAction",!0),s.setCurrentRouteName=i(p+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,i="function"==typeof t;return o(l+"tracer",[u.now(),e,n],r),function(){if(f.emit((i?"":"no-")+"fn-start",[u.now(),r,i],n),i)try{return t.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],n),e}finally{f.emit("fn-end",[u.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=i(l+t)}),newrelic.noticeError=function(e,t){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,t])}},{}],2:[function(e,t,n){function r(){return c.exists&&performance.now?Math.round(performance.now()):(o=Math.max((new Date).getTime(),o))-a}function i(){return o}var o=(new Date).getTime(),a=o,c=e(8);t.exports=r,t.exports.offset=a,t.exports.getLastTimestamp=i},{}],3:[function(e,t,n){function r(e,t){var n=e.getEntries();n.forEach(function(e){"first-paint"===e.name?d("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&d("timing",["fcp",Math.floor(e.startTime)])})}function i(e,t){var n=e.getEntries();n.length>0&&d("lcp",[n[n.length-1]])}function o(e){e.getEntries().forEach(function(e){e.hadRecentInput||d("cls",[e])})}function a(e){if(e instanceof m&&!g){var t=Math.round(e.timeStamp),n={type:e.type};t<=p.now()?n.fid=p.now()-t:t>p.offset&&t<=Date.now()?(t-=p.offset,n.fid=p.now()-t):t=p.now(),g=!0,d("timing",["fi",t,n])}}function c(e){d("pageHide",[p.now(),e])}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var f,u,s,d=e("handle"),p=e("loader"),l=e(5),m=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){f=new PerformanceObserver(r);try{f.observe({entryTypes:["paint"]})}catch(v){}u=new PerformanceObserver(i);try{u.observe({entryTypes:["largest-contentful-paint"]})}catch(v){}s=new PerformanceObserver(o);try{s.observe({type:"layout-shift",buffered:!0})}catch(v){}}if("addEventListener"in document){var g=!1,y=["click","keydown","mousedown","pointerdown","touchstart"];y.forEach(function(e){document.addEventListener(e,a,!1)})}l(c)}},{}],4:[function(e,t,n){function r(e,t){if(!i)return!1;if(e!==i)return!1;if(!t)return!0;if(!o)return!1;for(var n=o.split("."),r=t.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var c=navigator.userAgent,f=c.match(a);f&&c.indexOf("Chrome")===-1&&c.indexOf("Chromium")===-1&&(i="Safari",o=f[1])}t.exports={agent:i,version:o,match:r}},{}],5:[function(e,t,n){function r(e){function t(){e(a&&document[a]?document[a]:document[i]?"hidden":"visible")}"addEventListener"in document&&o&&document.addEventListener(o,t,!1)}t.exports=r;var i,o,a;"undefined"!=typeof document.hidden?(i="hidden",o="visibilitychange",a="visibilityState"):"undefined"!=typeof document.msHidden?(i="msHidden",o="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(i="webkitHidden",o="webkitvisibilitychange",a="webkitVisibilityState")},{}],6:[function(e,t,n){function r(e,t){var n=[],r="",o=0;for(r in e)i.call(e,r)&&(n[o]=t(r,e[r]),o+=1);return n}var i=Object.prototype.hasOwnProperty;t.exports=r},{}],7:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,i=n-t||0,o=Array(i<0?0:i);++r<i;)o[r]=e[t+r];return o}t.exports=r},{}],8:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function i(e){function t(e){return e&&e instanceof r?e:e?f(e,c,o):o()}function n(n,r,i,o){if(!p.aborted||o){e&&e(n,r,i);for(var a=t(i),c=v(n),f=c.length,u=0;u<f;u++)c[u].apply(a,r);var d=s[w[n]];return d&&d.push([b,n,r,a]),a}}function l(e,t){h[e]=v(e).concat(t)}function m(e,t){var n=h[e];if(n)for(var r=0;r<n.length;r++)n[r]===t&&n.splice(r,1)}function v(e){return h[e]||[]}function g(e){return d[e]=d[e]||i(n)}function y(e,t){u(e,function(e,n){t=t||"feature",w[n]=t,t in s||(s[t]=[])})}var h={},w={},b={on:l,addEventListener:l,removeEventListener:m,emit:n,get:g,listeners:v,context:t,buffer:y,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(p.aborted=!0,s=p.backlog={})}var c="nr@context",f=e("gos"),u=e(6),s={},d={},p=t.exports=i();p.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(i.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[t]=r,r}var i=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){i.buffer([e],r),i.emit(e,t,n)}var i=e("ee").get("handle");t.exports=r,r.ee=i},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!E++){var e=b.info=NREUM.info,t=p.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return u.abort();f(h,function(t,n){e[t]||(e[t]=n)});var n=a();c("mark",["onload",n+b.offset],null,"api"),c("timing",["load",n]);var r=p.createElement("script");r.src="https://"+e.agent,t.parentNode.insertBefore(r,t)}}function i(){"complete"===p.readyState&&o()}function o(){c("mark",["domContent",a()+b.offset],null,"api")}var a=e(2),c=e("handle"),f=e(6),u=e("ee"),s=e(4),d=window,p=d.document,l="addEventListener",m="attachEvent",v=d.XMLHttpRequest,g=v&&v.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:v,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var y=""+location,h={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1184.min.js"},w=v&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),b=t.exports={offset:a.getLastTimestamp(),now:a,origin:y,features:{},xhrWrappable:w,userAgent:s};e(1),e(3),p[l]?(p[l]("DOMContentLoaded",o,!1),d[l]("load",r,!1)):(p[m]("onreadystatechange",i),d[m]("onload",r)),c("mark",["firstbyte",a.getLastTimestamp()],null,"api");var E=0},{}],"wrap-function":[function(e,t,n){function r(e){return!(e&&e instanceof Function&&e.apply&&!e[a])}var i=e("ee"),o=e(7),a="nr@original",c=Object.prototype.hasOwnProperty,f=!1;t.exports=function(e,t){function n(e,t,n,i){function nrWrapper(){var r,a,c,f;try{a=this,r=o(arguments),c="function"==typeof n?n(r,a):n||{}}catch(u){p([u,"",[r,a,i],c])}s(t+"start",[r,a,i],c);try{return f=e.apply(a,r)}catch(d){throw s(t+"err",[r,a,d],c),d}finally{s(t+"end",[r,a,f],c)}}return r(e)?e:(t||(t=""),nrWrapper[a]=e,d(e,nrWrapper),nrWrapper)}function u(e,t,i,o){i||(i="");var a,c,f,u="-"===i.charAt(0);for(f=0;f<t.length;f++)c=t[f],a=e[c],r(a)||(e[c]=n(a,u?c+i:i,o,c))}function s(n,r,i){if(!f||t){var o=f;f=!0;try{e.emit(n,r,i,t)}catch(a){p([a,n,r,i])}f=o}}function d(e,t){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(e);return n.forEach(function(n){Object.defineProperty(t,n,{get:function(){return e[n]},set:function(t){return e[n]=t,t}})}),t}catch(r){p([r])}for(var i in e)c.call(e,i)&&(t[i]=e[i]);return t}function p(t){try{e.emit("internal-error",t)}catch(n){}}return e||(e=i),n.inPlace=u,n.flag=a,n}},{}]},{},["loader"]);</script>
+	<meta name="cart-hash" content="d751713988987e9331980363e24189ce">
+	<meta name="twitter:site" content="@VectorStock">
+	<meta property="og:site_name" content="VectorStock">
+	<meta property="fb:app_id" content="241100862642313">
+	
+	<link rel="dns-prefetch" href="https://cdn.vectorstock.com/">
+	<link rel="dns-prefetch" href="https://cdn1.vectorstock.com/">
+	<link rel="dns-prefetch" href="https://cdn2.vectorstock.com/">
+	<link rel="dns-prefetch" href="https://cdn3.vectorstock.com/">
+	<link rel="dns-prefetch" href="https://cdn4.vectorstock.com/">
+	<link rel="dns-prefetch" href="https://cdn5.vectorstock.com/">
+	<link rel="shortcut icon" href="https://cdn.vectorstock.com/img/icons/favicon.ico" type="image/x-icon">
+	<link rel="search" type="application/opensearchdescription+xml" title="VectorStock Search" href="https://www.vectorstock.com/xml/searchbox.xml">
+
+	<title>Light bulb with rays shine energy and idea symbol Vector Image</title>
+	<meta name="description" content="Light bulb with rays shine. Energy and idea symbol. Vector illustration. Download a Free Preview or High Quality Adobe Illustrator Ai, EPS, PDF and High Resolution JPEG versions..">
+	
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://www.vectorstock.com/royalty-free-vector/light-bulb-with-rays-shine-energy-and-idea-symbol-vector-23707941">
+	<meta property="og:title" content="Light bulb with rays shine energy and idea symbol vector image on VectorStock">
+	<meta property="og:description" content="Light bulb with rays shine. Energy and idea symbol. Vector illustration. Download a Free Preview or High Quality Adobe Illustrator Ai, EPS, PDF and High Resolution JPEG versions.">
+	<meta property="og:image" content="https://cdn2.vectorstock.com/i/1000x1000/79/41/light-bulb-with-rays-shine-energy-and-idea-symbol-vector-23707941.jpg">
+	<meta property="og:image:url" content="https://cdn2.vectorstock.com/i/1000x1000/79/41/light-bulb-with-rays-shine-energy-and-idea-symbol-vector-23707941.jpg">
+	<meta property="og:image:secure_url" content="https://cdn2.vectorstock.com/i/1000x1000/79/41/light-bulb-with-rays-shine-energy-and-idea-symbol-vector-23707941.jpg">
+	<meta property="og:image:type" content="image/jpeg">
+	<meta property="og:image:width" content="1000">
+	<meta property="og:image:height" content="999">
+	
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:url" content="https://www.vectorstock.com/royalty-free-vector/light-bulb-with-rays-shine-energy-and-idea-symbol-vector-23707941">
+	<meta name="twitter:title" content="Light bulb with rays shine energy and idea symbol vector image">
+	<meta name="twitter:description" content="Light bulb with rays shine. Energy and idea symbol. Vector illustration.">
+	<meta name="twitter:image" content="https://cdn2.vectorstock.com/i/thumb-large/79/41/light-bulb-with-rays-shine-energy-and-idea-symbol-vector-23707941.jpg">
+	<meta name="twitter:image:width" content="238">
+	<meta name="twitter:image:height" content="250">
+
+	<link rel="canonical" href="https://www.vectorstock.com/royalty-free-vector/light-bulb-with-rays-shine-energy-and-idea-symbol-vector-23707941">
+
+	<link rel="stylesheet" href="./logo_files/common1608259776.min.css">
+	<link rel="stylesheet" href="./logo_files/vector1608259776.min.css">
+	<script src="./logo_files/common1608259323.min.js.download"></script>
+	<script src="./logo_files/vector1608259323.min.js.download"></script>
+<!-- Analytics --><script type="text/javascript">// Load GA script
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+// Setup
+ga('create', 'UA-2180430-2', 'none');
+ga('require', 'linkid', 'linkid.js');
+ga('send', 'pageview');
+
+</script>
+</head>
+<body data-new-gr-c-s-check-loaded="14.990.0" data-gr-ext-installed="">
+
+<!-- Top header -->
+<header>
+	<nav class="top">
+		<figure>
+			<a href="https://www.vectorstock.com/" title="VectorStock®">VectorStock®</a>
+		</figure>
+
+		<div class="grid">
+			<form id="searchbox" class="empty">
+				<div class="wrap">
+					<fieldset>
+						<div class="contents">
+							<div class="tags">
+								<ul></ul>
+							</div>
+							<div class="input">
+								<input type="text" name="input" autocomplete="off" autocapitalize="none" spellcheck="true" value="" placeholder="Search…" maxlength="50" autofocus="">
+								<button type="button" data-action="clear">×</button>
+							</div>
+
+							<input type="hidden" name="category" value="">
+							<input type="hidden" name="custom_srp" value="">
+							<input type="hidden" name="artist" value="">
+							<input type="hidden" name="similar" value="">
+						</div>
+					<div class="suggestions"><div></div></div></fieldset>
+
+					<button type="submit">
+						<span class="icon">Search</span>
+					</button>
+				</div>
+			</form>
+			<ul>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors">All Vectors</a></li>
+					<li><a href="https://www.vectorstock.com/free-vectors">Free Vectors</a></li>
+				</ul>
+		</div>
+
+		<div class="aside">
+			<ul>
+				<li><a href="https://www.vectorstock.com/popular-categories" title="Popular Categories">Categories</a></li>
+				<li><a href="https://www.vectorstock.com/pricing" title="Pricing">Pricing</a></li>
+				<li class="account">
+					<button type="button" data-action="signup">Sign Up</button>
+					<button type="button" data-action="login">Login</button>
+				</li>
+			</ul>
+		</div>
+
+		<div id="mobilenav-icon">
+			<span></span><span></span><span></span><span></span>
+		</div>
+	</nav>
+
+	<!-- Submenu -->
+		<nav id="searchrelated"></nav>	
+
+		<!-- Mobile menu -->
+	<div id="mobilenav-menu">
+		<div>
+			<div class="group">
+				<h4>Browse</h4>
+				<ul>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors">All Vectors</a></li>
+					<li><a href="https://www.vectorstock.com/free-vectors">Free Vectors</a></li>
+				</ul>
+			</div>
+			<div class="group">
+				<h4>Account</h4>
+				<ul>
+					<li class="account">
+							<ul>
+								<li><a href="https://www.vectorstock.com/signup">Sign Up</a></li>
+								<li data-action="login"><a href="https://www.vectorstock.com/?login=1">Login…</a></li>
+								<li><a href="https://www.vectorstock.com/pricing">Pricing</a></li>
+							</ul>
+						</li>
+				</ul>
+				<form method="get" action="https://www.vectorstock.com/auth/logout" class="logout">
+					<input type="hidden" name="logout" value="1">
+				</form>
+			</div>
+			<div class="group">
+				<h4>Help</h4>
+				<ul>
+					<li><a href="https://www.vectorstock.com/faq"><abbr title="Frequently Asked Questions">FAQs</abbr></a></li>
+					<li><a href="https://www.vectorstock.com/contact">Contact Us</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</header>
+
+		<!-- Account Menu Tabs -->
+		<aside id="nav_sidebar" class="tabs tabsDark" style="">
+
+			<nav>
+				<ul role="tablist">
+					<li data-tab-id="signup" class=""><span role="tab"><span>Sign Up</span></span></li>
+					<li data-tab-id="login" class="selected"><span role="tab"><span>Log In</span></span></li>
+				</ul>
+			</nav>
+
+			<section id="sb_signup" data-tab-id="signup" class="">
+				<div class="primary">
+					<p>New to VectorStock?</p>
+					<p><em>We're the largest royalty-free, vector-only stock agency in the world.</em></p>
+					<p>Every week we add new premium graphics by the thousands.</p>
+				</div>
+				<div class="secondary">
+					<p>Whether you're a global ad&nbsp;agency or a freelance graphic designer, we have the vector graphics to make your project come to life.</p>
+					<p>Buy Vectors, sell Vectors or both. <a href="https://www.vectorstock.com/signup">Sign up now, it’s free.</a></p>
+				</div>
+				<div class="footer">
+					<button class="master">
+						<span class="title">Sign Up...</span>
+						<span class="value">
+							<span class="symbol signup"></span>
+						</span>
+					</button>
+				</div>
+			</section>
+
+			<section id="sb_login" data-tab-id="login" class="selected">
+				<form action="https://www.vectorstock.com/auth/login" method="post">
+
+
+					<fieldset class="">
+						<label for="vs_username">Email / Username</label>
+						<div class="textfield">
+							<input type="text" id="vs_username" name="vs_username" value="" autocomplete="on" tabindex="1">
+						</div>
+					</fieldset>
+					<fieldset class="">
+						<label for="vs_password">Password</label>
+						<button type="button" class="forgot">Forgot Password</button>
+						<div class="textfield">
+							<input type="password" id="vs_password" name="vs_password" value="" autocomplete="on" tabindex="2" maxlength="72">
+						</div>
+					</fieldset>
+					<fieldset>
+						<div class="checkbox checked">
+							<label class="selected" for="vs_remember">
+								<span class="title">Stay Logged In</span>
+								<span class="icon"></span>
+								<input type="checkbox" id="vs_remember" name="vs_remember" value="yes" tabindex="3" checked="">
+							</label>
+						</div>
+					</fieldset>
+
+
+					<button type="submit" tabindex="4">Log In</button>
+				</form>
+				<div class="alternatives">
+					<h6>Or Login With</h6>
+					<ul>
+						<li class="gp"><a href="https://www.vectorstock.com/">
+							<span class="title">Google</span>
+							<span class="icon"></span>
+						</a></li>
+						<li class="fb"><a href="https://www.vectorstock.com/">
+							<span class="title">Facebook</span>
+							<span class="icon"></span>
+						</a></li>
+					</ul>
+				</div>
+
+				
+			</section>
+		</aside>
+
+	<!-- Page -->
+	<article>
+		<section id="vs-asset">
+
+			<!-- Aside -->
+			<div class="aside">
+				<ol itemscope="" itemtype="http://schema.org/BreadcrumbList">
+					<li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+						<a itemtype="http://schema.org/Thing" itemprop="item" href="https://www.vectorstock.com/royalty-free-vectors">
+							<span itemprop="name">Royalty Free Vectors</span>
+						</a>
+						<meta itemprop="position" content="1">
+					</li>
+					<li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+						<a itemtype="http://schema.org/Thing" itemprop="item" href="https://www.vectorstock.com/royalty-free-vectors/idea-vectors">
+							<span itemprop="name">Idea Vectors</span>
+						</a>
+						<meta itemprop="position" content="2">
+					</li>
+				</ol>
+
+				<h1>
+					Light bulb with rays shine energy and idea symbol vector&nbsp;image																			</h1>
+
+				<figure style="padding-top: 99.901960784314%;" class="target reveal">
+					<div class="highres" data-src="https://cdn2.vectorstock.com/i/1000x1000/79/41/light-bulb-with-rays-shine-energy-and-idea-symbol-vector-23707941.jpg">
+						<noscript><img src="https://cdn2.vectorstock.com/i/1000x1000/79/41/light-bulb-with-rays-shine-energy-and-idea-symbol-vector-23707941.jpg" title="Light bulb with rays shine energy and idea symbol vector image" alt="Light bulb with rays shine energy and idea symbol"></noscript>
+					<img src="./logo_files/light-bulb-with-rays-shine-energy-and-idea-symbol-vector-23707941.jpg"></div>
+					<div class="lowres">
+						<img src="./logo_files/light-bulb-with-rays-shine-energy-and-idea-symbol-vector-23707941(1).jpg" title="Light bulb with rays shine energy and idea symbol vector image" alt="Light bulb with rays shine energy and idea symbol">
+					</div>
+					<div class="overlay"></div>
+				</figure>
+
+				<form data-loggedin="0" data-licenses="2" data-license="standard" data-status="" data-payment="single-image">
+					<input type="hidden" id="vector_id" value="23707941">
+					<input type="hidden" id="vector_title" value="Light bulb with rays shine energy and idea symbol">
+					<input type="hidden" id="vector_description" value="Light bulb with rays shine. Energy and idea symbol. Vector illustration. Download a Free Preview or High Quality Adobe Illustrator Ai, EPS, PDF and High Resolution JPEG versions.">
+					<input type="hidden" id="vector_url" value="https://www.vectorstock.com/royalty-free-vector/light-bulb-with-rays-shine-energy-and-idea-symbol-vector-23707941">
+					<input type="hidden" id="vector_media" value="https://cdn2.vectorstock.com/i/1000x1000/79/41/light-bulb-with-rays-shine-energy-and-idea-symbol-vector-23707941.jpg">
+					<input type="hidden" id="vector_ratio" value="0.99901960784314">
+					<input type="hidden" id="vector_license_status" value="">
+					<input type="hidden" id="artist_name" value="3t0n4k">
+					<input type="hidden" id="account_user" value="0">
+
+					<div class="options">
+						<!--
+						-- OPTION: License type
+						-->
+						<div class="option" data-type="license" data-license="standard" data-licenses="2">
+							<h6><span class="type">License</span><a href="https://www.vectorstock.com/faq/members/standard-license">Learn More</a></h6>
+							<div class="optgroup radgroup">
+								<fieldset>
+									<label for="f_license_standard" class="checked">
+										<input type="radio" id="f_license_standard" name="license" value="standard" checked="checked" tabindex="2">
+										<span class="label">Standard</span>
+										<span class="descr">For Print, Advertising, Design</span>
+									</label>
+								</fieldset>
+								<fieldset>
+									<label for="f_license_expanded">
+										<input type="radio" id="f_license_expanded" name="license" value="expanded" tabindex="4">
+										<span class="label">Expanded</span>
+										<span class="descr">For Resale &amp; Reproduction</span>
+									</label>
+								</fieldset>
+							</div>
+
+							<div class="help">
+								<p>The license type determines how you can use this image.</p>
+								<table>
+									<thead>
+										<tr>
+											<th></th>
+																						<th data-license="standard">Std.</th>																						<th data-license="expanded">Exp.</th>										</tr>
+									</thead>
+									<tbody>
+																				<tr>
+											<td>Print / Editorial</td>
+																						<td data-license="standard"><span class="yes"></span></td>
+											<td data-license="expanded"><span class="yes"></span></td>										</tr>
+										<tr>
+											<td>Graphic Design</td>
+																						<td data-license="standard"><span class="yes"></span></td>
+											<td data-license="expanded"><span class="yes"></span></td>										</tr>
+										<tr>
+											<td>Web Design</td>
+																						<td data-license="standard"><span class="yes"></span></td>
+											<td data-license="expanded"><span class="yes"></span></td>										</tr>
+										<tr>
+											<td>Social Media</td>
+																						<td data-license="standard"><span class="yes"></span></td>
+											<td data-license="expanded"><span class="yes"></span></td>										</tr>
+										<tr>
+											<td>Edit &amp; Modify</td>
+																						<td data-license="standard"><span class="yes"></span></td>
+											<td data-license="expanded"><span class="yes"></span></td>										</tr>
+										<tr>
+											<td>Multi-user</td>
+																						<td data-license="standard"><span class="no"></span></td>
+											<td data-license="expanded"><span class="yes"></span></td>										</tr>
+										<tr>
+											<td>Resale Items</td>
+																						<td data-license="standard"><span class="no"></span></td>
+											<td data-license="expanded"><span class="yes"></span></td>										</tr>
+										<tr>
+											<td>Unlimited Runs</td>
+																						<td data-license="standard"><span class="no"></span></td>
+											<td data-license="expanded"><span class="yes"></span></td>										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+						
+						<!--
+						-- OPTION: Payment options (Standard)
+						-->
+						<div class="option" data-type="payment" data-license="standard">
+							<h6><span class="type">Ways to Buy</span><a href="https://www.vectorstock.com/pricing">Compare</a></h6>
+							<div class="optgroup radgroup" data-license="standard">
+								<fieldset>
+									<label for="f_payment_standard_single-image" class="checked">
+										<input type="radio" id="f_payment_standard_single-image" name="payment_standard" data-cost="14.99" value="single-image" checked="checked" tabindex="5">
+										<span class="label">Pay-per-Image</span>
+										<span class="value"><small>$</small><var>14.99</var></span>
+									</label>
+								</fieldset>
+								<fieldset>
+									<label for="f_payment_standard_credits">
+										<input type="radio" id="f_payment_standard_credits" name="payment_standard" data-cost="1" value="credits" tabindex="6">
+										<span class="label">Credits</span>
+										<span class="value"><small>$</small><var>1.00</var></span>
+									</label>
+								</fieldset>
+								<fieldset>
+									<label for="f_payment_standard_subscription">
+										<input type="radio" id="f_payment_standard_subscription" name="payment_standard" data-cost="1" value="subscription" tabindex="7">
+										<span class="label">Subscription</span>
+										<span class="value"><small>$</small><var>0.69</var></span>
+									</label>
+								</fieldset>
+							</div>
+							<div class="help">
+								<p>There are three ways to pay for Standard licenses. Prices are $<abbr title="United States Dollars">US</abbr>.</p>
+
+								<table>
+									<thead>
+										<tr>
+											<th>Pay with</th>
+											<th>Image Price</th>
+										</tr>
+									</thead>
+									<tbody>
+																				<tr>
+											<td colspan="2">
+												<span class="title">
+													<span class="dt">Pay-per-Image</span>
+													<span class="dm"></span>
+													<span class="dd"><small>$</small>14.99</span>
+												</span>
+												<span class="byline">One-time payment</span>
+											</td>
+										</tr>
+																				<tr>
+											<td colspan="2">
+												<span class="title">
+													<span class="dt">Pre-paid Credits</span>
+													<span class="dm"></span>
+													<span class="dd"><small>$</small>1</span>
+												</span>
+												<span class="byline">Download images on-demand (1 credit = $1). Minimum purchase of 30.</span>
+											</td>
+										</tr>
+										<tr>
+											<td colspan="2">
+												<span class="title">
+													<span class="dt">Subscription Plan</span>
+													<span class="dm"></span>
+													<span class="dd"><em>From</em> 69c</span>
+												</span>
+												<span class="byline">Choose a monthly plan. Unused downloads automatically roll into following month.</span>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+						<!--
+						-- OPTION: Payment options (Expanded)
+						-->
+						<div class="option" data-type="payment" data-license="expanded">
+							<h6><span class="type">Ways to Buy</span><a href="https://www.vectorstock.com/faq/members/ways-to-buy">Compare</a></h6>
+							<div class="optgroup radgroup" data-license="expanded">
+								<fieldset>
+									<label for="f_payment_expanded_single-image" class="checked">
+										<input type="radio" id="f_payment_expanded_single-image" name="payment_expanded" data-cost="29.99" value="single-image" checked="checked" tabindex="8">
+										<span class="label">Pay-per-Image</span>
+										<span class="value"><small>$</small><var>29.99</var></span>
+									</label>
+								</fieldset>
+								<fieldset>
+									<label for="f_payment_expanded_credits">
+										<input type="radio" id="f_payment_expanded_credits" name="payment_expanded" data-cost="30" value="credits" tabindex="9">
+										<span class="label">Credits</span>
+										<span class="value"><small>$</small><var>30.00</var></span>
+									</label>
+								</fieldset>
+							</div>
+														<div class="help">
+								<p>There are two ways to pay for Expanded licenses. Prices are $<abbr title="United States Dollars">US</abbr>.</p>
+
+								<table>
+									<thead>
+										<tr>
+											<th>Pay with</th>
+											<th>Cost per Image</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td colspan="2">
+												<span class="title">
+													<span class="dt">Pay-per-Image</span>
+													<span class="dm"></span>
+													<span class="dd"><small>$</small>29.99</span>
+												</span>
+												<span class="byline">One-off payment, no signup needed.</span>
+											</td>
+										</tr>
+										<tr>
+											<td colspan="2">
+												<span class="title">
+													<span class="dt">Pre-paid Credits</span>
+													<span class="dm"></span>
+													<span class="dd"><small>$</small>30</span>
+												</span>
+												<span class="byline">Download images on-demand (1 credit = $1).</span>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+													</div>
+						<!--
+						-- OPTION: Customization
+						-->
+						<div class="option" data-type="customization">
+							<h6><span class="type">New Option!</span><a href="https://www.vectorstock.com/faq/members/what-is-hire-a-designer">What is this?</a></h6>
+							<div class="optgroup chkgroup">
+								<fieldset>
+									<label for="f_payment_customization">
+										<input type="checkbox" id="f_payment_customization" name="payment_customization" data-cost="85" value="customization" tabindex="12">
+										<span class="label">Customize image</span>
+										<span class="descr">Only available with Pay-per-Image</span>
+										<span class="value"><small>$</small><var>85.00</var></span>
+									</label>
+								</fieldset>
+							</div>
+							<div class="help">
+								<p>Love the image but just need a few modifications? Let our talented artists do the work for you!</p>
+								<p>We’ll connect you with a designer who can make updates and send you the artwork in a format of your choice.</p>
+								<h4>Examples</h4>
+								<ul>
+									<li>Change the text</li>
+									<li>Modify colors</li>
+									<li>Resize to new dimensions</li>
+									<li>Include logo or symbol</li>
+									<li>Add your company or business name</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="download">
+						<button type="button" data-action="download">
+							<span class="label">Download Image</span>
+							<span class="icon"></span>
+						</button>
+						<h6><span class="label">Files Included</span></h6>
+						<div class="help">
+							<span class="loading"><span class="label">Loading Details...</span></span>
+						</div>
+					</div>
+					<div class="download_options">
+						<div class="wrap">
+							<div class="optgroup" data-action="download">
+								<span class="header">Download File/s:</span>
+								<div class="dropdown" data-value="zip">
+									<div class="display">
+										<span class="label"><strong>ZIP Archive</strong></span>
+										<span class="icon"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"><path d="M10.6,12.8 15,17.2 19.4,12.8"></path></svg></span>
+									</div>
+									<div class="select">
+										<select>
+											<optgroup label="All Files">
+												<option value="zip" data-label="ZIP Archive" data-details="" data-url="" selected="selected">ZIP Archive</option>											</optgroup>
+											<optgroup label="Image">
+												<option value="jpg" data-label="High-res JPG" data-details="300 DPI+" data-url="">High-res JPG (300 DPI+)</option>												<option value="png" data-label="High-res PNG" data-details="300 DPI+" data-url="">High-res PNG (300 DPI+)</option>											</optgroup>
+											<optgroup label="Vector">
+												<option value="ai" data-label="Adobe Illustrator" data-details="v10+" data-url="">Adobe Illustrator (v10+)</option>												<option value="eps" data-label="Vector EPS" data-details="v8+" data-url="">Vector EPS (v8+)</option>												<option value="pdf" data-label="Vector PDF" data-details="" data-url="">Vector PDF</option>											</optgroup>
+										</select>
+									</div>
+								</div>
+								<button type="button" data-action="download_file">
+									<span class="label">Download ZIP</span>
+									<span class="icon"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40"><path d="M23.6,21.2 23.6,9.5 16.4,9.5 16.4,21.3 10.8,21.3 11,21.5 20,30.5 29.2,21.3"></path></svg></span>
+								</button>
+							</div>
+							<div class="optgroup" data-action="customization" data-status="uninitiated">
+								<span class="header">Image Customization:</span>
+								<ul class="actions">
+									<li>
+										<button type="button" data-job-url="/customizations">
+											<span class="label">View your job...</span>
+											<span class="icon"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"><path d="M12.8,19.4 17.2,15 12.8,10.6"></path></svg></span>
+										</button>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+
+			<!-- Image -->
+			<div class="image">
+				<figure data-orientation="landscape" style="padding-top: 99.901960784314%;" class="target reveal">
+					<div class="highres" data-src="https://cdn2.vectorstock.com/i/1000x1000/79/41/light-bulb-with-rays-shine-energy-and-idea-symbol-vector-23707941.jpg">
+						<noscript><img src="https://cdn2.vectorstock.com/i/1000x1000/79/41/light-bulb-with-rays-shine-energy-and-idea-symbol-vector-23707941.jpg" title="Light bulb with rays shine energy and idea symbol vector image" alt="Light bulb with rays shine energy and idea symbol"></noscript>
+					<img src="./logo_files/light-bulb-with-rays-shine-energy-and-idea-symbol-vector-23707941.jpg"></div>
+					<div class="lowres">
+						<img src="./logo_files/light-bulb-with-rays-shine-energy-and-idea-symbol-vector-23707941(1).jpg" title="Light bulb with rays shine energy and idea symbol vector image" alt="Light bulb with rays shine energy and idea symbol">
+					</div>
+					<div class="overlay"></div>
+					<div class="panels">
+						<div class="share">
+							<h4>Share with others</h4>
+							<ul>
+								<li class="pinterest"><button type="button" data-action="pinterest"><span><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25" focusable="false" role="img"><path d="M12.5,0C5.6,0,0,5.6,0,12.5c0,5.12,3.08,9.52,7.48,11.45c-0.03-0.87-0.01-1.92,0.22-2.87c0.24-1.01,1.61-6.81,1.61-6.81s-0.4-0.8-0.4-1.98c0-1.85,1.07-3.24,2.41-3.24c1.14,0,1.69,0.85,1.69,1.88c0,1.14-0.73,2.85-1.1,4.44c-0.31,1.33,0.67,2.41,1.97,2.41c2.37,0,3.96-3.04,3.96-6.65c0-2.74-1.85-4.79-5.2-4.79c-3.79,0-6.15,2.83-6.15,5.99c0,1.09,0.32,1.86,0.82,2.45c0.23,0.27,0.26,0.38,0.18,0.7c-0.06,0.23-0.2,0.78-0.25,1c-0.08,0.32-0.34,0.43-0.63,0.31c-1.75-0.71-2.56-2.62-2.56-4.77c0-3.55,3-7.81,8.93-7.81c4.77,0,7.91,3.45,7.91,7.16c0,4.9-2.73,8.57-6.75,8.57c-1.35,0-2.62-0.73-3.05-1.56c0,0-0.73,2.88-0.88,3.44c-0.27,0.96-0.78,1.93-1.26,2.68C10.08,24.82,11.27,25,12.5,25C19.4,25,25,19.4,25,12.5S19.4,0,12.5,0L12.5,0z"></path></svg></span><span class="label">Pinterest</span></span></button></li>
+								<li class="facebook"><button type="button" data-action="facebook"><span><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25" focusable="false" role="img"><path d="M22.44,1H2.56C1.7,1,1,1.7,1,2.56v19.88C1,23.3,1.7,24,2.56,24h10.41v-8.89H9.98v-3.46h2.99V9.1c0-2.96,1.81-4.58,4.45-4.58c1.27,0,2.35,0.09,2.67,0.14v3.1l-1.83,0c-1.44,0-1.72,0.68-1.72,1.69v2.21h3.43l-0.45,3.46h-2.98V24h5.89C23.3,24,24,23.3,24,22.44V2.56C24,1.7,23.3,1,22.44,1z"></path></svg></span><span class="label">Facebook</span></span></button></li>
+								<li class="twitter"><button type="button" data-action="twitter"><span><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25" focusable="false" role="img"><path d="M7.86,22.5c9.43,0,14.59-7.69,14.59-14.37c0-0.22,0-0.44-0.01-0.65c1-0.71,1.87-1.6,2.56-2.61c-0.92,0.4-1.91,0.67-2.95,0.79c1.06-0.62,1.87-1.61,2.26-2.79c-0.99,0.58-2.09,1-3.26,1.23c-0.94-0.98-2.27-1.6-3.74-1.6c-2.83,0-5.13,2.26-5.13,5.05c0,0.4,0.05,0.78,0.13,1.15C8.05,8.49,4.27,6.48,1.74,3.42C1.3,4.17,1.05,5.04,1.05,5.96c0,1.75,0.91,3.3,2.28,4.2C2.49,10.14,1.7,9.91,1,9.53C1,9.55,1,9.58,1,9.6c0,2.45,1.77,4.49,4.11,4.95c-0.43,0.12-0.88,0.18-1.35,0.18c-0.33,0-0.65-0.03-0.96-0.09c0.65,2.01,2.55,3.47,4.79,3.51C5.84,19.5,3.63,20.3,1.22,20.3c-0.41,0-0.82-0.02-1.22-0.07C2.27,21.66,4.97,22.5,7.86,22.5"></path></svg></span><span class="label">Twitter</span></span></button></li>
+								<li class="email"><button type="button" data-action="email"><span><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25" focusable="false" role="img"><path d="M22.48,4.17H2.52C1.13,4.17,0,5.3,0,6.69v11.62c0,1.39,1.13,2.52,2.52,2.52h19.96c1.39,0,2.52-1.13,2.52-2.52V6.69C25,5.3,23.87,4.17,22.48,4.17z M23.49,18.31c0,0.56-0.45,1.01-1.01,1.01H2.52c-0.55,0-1.01-0.45-1.01-1.01V6.69c0-0.56,0.45-1.01,1.01-1.01h19.96c0.56,0,1.01,0.45,1.01,1.01V18.31z"></path><path d="M19.95,7.95l-7.45,4.83L5.05,7.95C4.7,7.72,4.24,7.82,4.01,8.17C3.78,8.52,3.88,8.99,4.23,9.22l7.86,5.1c0.13,0.08,0.27,0.12,0.41,0.12s0.29-0.04,0.41-0.12l7.86-5.1c0.35-0.23,0.45-0.7,0.22-1.05C20.77,7.82,20.3,7.72,19.95,7.95z"></path></svg></span><span class="label">Email</span></span></button></li>
+							</ul>
+						</div>
+						<div class="composite">
+							<button type="button" data-action="download"><span><span class="label">Download JPG Preview Image</span></span></button>
+						</div>
+					</div>
+				</figure>
+				<div class="details">
+					<div class="meta">
+						<ul>
+							<li class="meta-id">
+								<dl><dt>Image ID</dt><dd>23707941</dd></dl>
+							</li>
+							<li class="meta-artist">
+								<dl>
+									<dt>Artist</dt>
+									<dd><a href="https://www.vectorstock.com/royalty-free-vectors/vectors-by_3t0n4k" rel="nofollow">3t0n4k</a><button type="button" data-action="follow" title="Follow Artists that you like to create a newsfeed of their recent images."><span class="label">Follow</span></button></dd>
+								</dl>
+							</li>
+						</ul>
+					</div>
+					<div class="options" data-total="2">
+						<ul>
+							<li class="opt-like">
+								<button type="button" data-action="like" data-count="0"><span class="icon">♥</span><span class="label">Like</span><span class="tally"></span></button>
+							</li>
+							<li class="opt-cart">
+								<button type="button" data-action="cart"><span class="icon">+</span><span class="label">Cart</span></button>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<!-- Metadata -->
+			<div class="metadata">
+				<div itemtype="http://schema.org/ImageObject" itemscope="">
+					<img src="./logo_files/light-bulb-with-rays-shine-energy-and-idea-symbol-vector-23707941.jpg" itemprop="contentUrl" alt="Light bulb with rays shine energy and idea symbol vector">
+					<meta itemprop="url" content="https://cdn2.vectorstock.com/i/1000x1000/79/41/light-bulb-with-rays-shine-energy-and-idea-symbol-vector-23707941.jpg">
+					<meta itemprop="name" content="Light bulb with rays shine energy and idea symbol">
+					<meta itemprop="description" content="Light bulb with rays shine. Energy and idea symbol. Vector illustration. Download a Free Preview or High Quality Adobe Illustrator Ai, EPS, PDF and High Resolution JPEG versions. vector image">
+					<meta itemprop="datePublished" content="2019-01-31">
+					<meta itemprop="fileFormat" content="image/jpeg">
+					<meta itemprop="acquireLicensePage" content="https://www.vectorstock.com/royalty-free-vector/light-bulb-with-rays-shine-energy-and-idea-symbol-vector-23707941">
+					<meta itemprop="license" content="https://www.vectorstock.com/faq/members/standard-license">
+					<meta itemprop="sourceOrganization" content="VectorStock.com">
+				</div>
+			</div>
+			
+		</section>
+
+
+		<section id="vs-related">
+			<div id="group-similar" class="group">
+				<h6><span class="icon"></span><strong>Similar Images</strong></h6>
+
+				<div class="gallery large">
+					<ul>
+						<li data-src="https://cdn1.vectorstock.com/i/thumb-large/31/65/yellow-lamp-with-rays-icon-in-flat-style-creative-vector-30713165.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/yellow-lamp-with-rays-icon-in-flat-style-creative-vector-30713165" title="yellow lamp with rays icon in flat style creative vector image"><noscript><img src="https://cdn1.vectorstock.com/i/thumb-large/31/65/yellow-lamp-with-rays-icon-in-flat-style-creative-vector-30713165.jpg" title="yellow lamp with rays icon in flat style creative" alt="yellow lamp with rays icon in flat style creative vector image"></noscript></a></li>
+						<li data-src="https://cdn3.vectorstock.com/i/thumb-large/75/82/creative-idea-light-bulb-with-rays-shine-business-vector-21497582.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/creative-idea-light-bulb-with-rays-shine-business-vector-21497582" title="creative idea light bulb with rays shine business vector image"><noscript><img src="https://cdn3.vectorstock.com/i/thumb-large/75/82/creative-idea-light-bulb-with-rays-shine-business-vector-21497582.jpg" title="creative idea light bulb with rays shine business" alt="creative idea light bulb with rays shine business vector image"></noscript></a></li>
+						<li data-src="https://cdn1.vectorstock.com/i/thumb-large/97/50/light-bulb-for-energy-and-idea-concept-vector-21499750.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/light-bulb-for-energy-and-idea-concept-vector-21499750" title="light bulb for energy and idea concept vector image"><noscript><img src="https://cdn1.vectorstock.com/i/thumb-large/97/50/light-bulb-for-energy-and-idea-concept-vector-21499750.jpg" title="light bulb for energy and idea concept" alt="light bulb for energy and idea concept vector image"></noscript></a></li>
+						<li data-src="https://cdn3.vectorstock.com/i/thumb-large/86/57/light-bulb-yellow-cartoon-vector-34888657.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/light-bulb-yellow-cartoon-vector-34888657" title="light bulb yellow cartoon vector image"><noscript><img src="https://cdn3.vectorstock.com/i/thumb-large/86/57/light-bulb-yellow-cartoon-vector-34888657.jpg" title="light bulb yellow cartoon" alt="light bulb yellow cartoon vector image"></noscript></a></li>
+						<li data-src="https://cdn4.vectorstock.com/i/thumb-large/82/38/light-bulb-shine-electric-gold-logo-vector-29198238.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/light-bulb-shine-electric-gold-logo-vector-29198238" title="light bulb shine electric gold logo vector image"><noscript><img src="https://cdn4.vectorstock.com/i/thumb-large/82/38/light-bulb-shine-electric-gold-logo-vector-29198238.jpg" title="light bulb shine electric gold logo" alt="light bulb shine electric gold logo vector image"></noscript></a></li>
+						<li data-src="https://cdn1.vectorstock.com/i/thumb-large/66/30/light-bulb-neon-sign-light-bulb-design-vector-21776630.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/light-bulb-neon-sign-light-bulb-design-vector-21776630" title="light bulb neon sign light bulb design vector image"><noscript><img src="https://cdn1.vectorstock.com/i/thumb-large/66/30/light-bulb-neon-sign-light-bulb-design-vector-21776630.jpg" title="light bulb neon sign light bulb design" alt="light bulb neon sign light bulb design vector image"></noscript></a></li>
+						<li data-src="https://cdn4.vectorstock.com/i/thumb-large/47/83/lamp-idea-lightbulb-doodle-sketch-icon-vector-21944783.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/lamp-idea-lightbulb-doodle-sketch-icon-vector-21944783" title="lamp idea lightbulb doodle sketch icon vector image"><noscript><img src="https://cdn4.vectorstock.com/i/thumb-large/47/83/lamp-idea-lightbulb-doodle-sketch-icon-vector-21944783.jpg" title="lamp idea lightbulb doodle sketch icon" alt="lamp idea lightbulb doodle sketch icon vector image"></noscript></a></li>
+						<li data-src="https://cdn2.vectorstock.com/i/thumb-large/29/46/creative-idea-in-light-bulb-shape-vector-34592946.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/creative-idea-in-light-bulb-shape-vector-34592946" title="creative idea in light bulb shape vector image"><noscript><img src="https://cdn2.vectorstock.com/i/thumb-large/29/46/creative-idea-in-light-bulb-shape-vector-34592946.jpg" title="creative idea in light bulb shape" alt="creative idea in light bulb shape vector image"></noscript></a></li>
+						<li data-src="https://cdn2.vectorstock.com/i/thumb-large/14/16/light-bulb-with-rays-shine-vector-32761416.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/light-bulb-with-rays-shine-vector-32761416" title="light bulb with rays shine vector image"><noscript><img src="https://cdn2.vectorstock.com/i/thumb-large/14/16/light-bulb-with-rays-shine-vector-32761416.jpg" title="light bulb with rays shine" alt="light bulb with rays shine vector image"></noscript></a></li>
+						<li data-src="https://cdn2.vectorstock.com/i/thumb-large/58/46/bulb-lamp-icon-logo-line-outline-monoline-vector-24045846.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/bulb-lamp-icon-logo-line-outline-monoline-vector-24045846" title="bulb lamp icon logo line outline monoline vector image"><noscript><img src="https://cdn2.vectorstock.com/i/thumb-large/58/46/bulb-lamp-icon-logo-line-outline-monoline-vector-24045846.jpg" title="bulb lamp icon logo line outline monoline" alt="bulb lamp icon logo line outline monoline vector image"></noscript></a></li>
+						<li data-src="https://cdn5.vectorstock.com/i/thumb-large/88/99/light-bulb-isolated-design-element-vector-35218899.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/light-bulb-isolated-design-element-vector-35218899" title="light bulb isolated design element vector image"><noscript><img src="https://cdn5.vectorstock.com/i/thumb-large/88/99/light-bulb-isolated-design-element-vector-35218899.jpg" title="light bulb isolated design element" alt="light bulb isolated design element vector image"></noscript></a></li>
+						<li data-src="https://cdn2.vectorstock.com/i/thumb-large/32/56/cute-elongated-glowing-glass-light-bulb-on-black-vector-35063256.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/cute-elongated-glowing-glass-light-bulb-on-black-vector-35063256" title="cute elongated glowing glass light bulb on black vector image"><noscript><img src="https://cdn2.vectorstock.com/i/thumb-large/32/56/cute-elongated-glowing-glass-light-bulb-on-black-vector-35063256.jpg" title="cute elongated glowing glass light bulb on black" alt="cute elongated glowing glass light bulb on black vector image"></noscript></a></li>
+						<li data-src="https://cdn3.vectorstock.com/i/thumb-large/63/02/idea-creative-lamp-business-innovation-concept-vector-23596302.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/idea-creative-lamp-business-innovation-concept-vector-23596302" title="idea creative lamp business innovation concept vector image"><noscript><img src="https://cdn3.vectorstock.com/i/thumb-large/63/02/idea-creative-lamp-business-innovation-concept-vector-23596302.jpg" title="idea creative lamp business innovation concept" alt="idea creative lamp business innovation concept vector image"></noscript></a></li>
+						<li data-src="https://cdn3.vectorstock.com/i/thumb-large/87/57/electric-bulb-with-lightning-flash-lightning-vector-21848757.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/electric-bulb-with-lightning-flash-lightning-vector-21848757" title="electric bulb with lightning flash lightning vector image"><noscript><img src="https://cdn3.vectorstock.com/i/thumb-large/87/57/electric-bulb-with-lightning-flash-lightning-vector-21848757.jpg" title="electric bulb with lightning flash lightning" alt="electric bulb with lightning flash lightning vector image"></noscript></a></li>
+						<li data-src="https://cdn4.vectorstock.com/i/thumb-large/13/48/set-hanging-light-bulbs-with-one-glowing-vector-22781348.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/set-hanging-light-bulbs-with-one-glowing-vector-22781348" title="set hanging light bulbs with one glowing vector image"><noscript><img src="https://cdn4.vectorstock.com/i/thumb-large/13/48/set-hanging-light-bulbs-with-one-glowing-vector-22781348.jpg" title="set hanging light bulbs with one glowing" alt="set hanging light bulbs with one glowing vector image"></noscript></a></li>
+						<li data-src="https://cdn5.vectorstock.com/i/thumb-large/72/54/light-bulb-idea-trendy-symbol-trendy-vector-25717254.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/light-bulb-idea-trendy-symbol-trendy-vector-25717254" title="light bulb idea trendy symbol trendy vector image"><noscript><img src="https://cdn5.vectorstock.com/i/thumb-large/72/54/light-bulb-idea-trendy-symbol-trendy-vector-25717254.jpg" title="light bulb idea trendy symbol trendy" alt="light bulb idea trendy symbol trendy vector image"></noscript></a></li>
+						<li data-src="https://cdn2.vectorstock.com/i/thumb-large/22/31/sketch-light-bulb-new-business-and-creative-idea-vector-21642231.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/sketch-light-bulb-new-business-and-creative-idea-vector-21642231" title="sketch light bulb new business and creative idea vector image"><noscript><img src="https://cdn2.vectorstock.com/i/thumb-large/22/31/sketch-light-bulb-new-business-and-creative-idea-vector-21642231.jpg" title="sketch light bulb new business and creative idea" alt="sketch light bulb new business and creative idea vector image"></noscript></a></li>
+						<li data-src="https://cdn3.vectorstock.com/i/thumb-large/21/67/idea-one-line-drawing-vector-21392167.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/idea-one-line-drawing-vector-21392167" title="idea one line drawing vector image"><noscript><img src="https://cdn3.vectorstock.com/i/thumb-large/21/67/idea-one-line-drawing-vector-21392167.jpg" title="idea one line drawing" alt="idea one line drawing vector image"></noscript></a></li>
+						<li data-src="https://cdn5.vectorstock.com/i/thumb-large/14/29/light-bulb-idea-concept-retro-poster-vector-25491429.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/light-bulb-idea-concept-retro-poster-vector-25491429" title="light bulb idea concept retro poster vector image"><noscript><img src="https://cdn5.vectorstock.com/i/thumb-large/14/29/light-bulb-idea-concept-retro-poster-vector-25491429.jpg" title="light bulb idea concept retro poster" alt="light bulb idea concept retro poster vector image"></noscript></a></li>
+						<li data-src="https://cdn5.vectorstock.com/i/thumb-large/11/04/lightbulb-bulb-electricity-electric-light-vector-23651104.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/lightbulb-bulb-electricity-electric-light-vector-23651104" title="lightbulb bulb electricity electric light vector image"><noscript><img src="https://cdn5.vectorstock.com/i/thumb-large/11/04/lightbulb-bulb-electricity-electric-light-vector-23651104.jpg" title="lightbulb bulb electricity electric light" alt="lightbulb bulb electricity electric light vector image"></noscript></a></li>
+					</ul>
+				</div>
+				<div class="gallery small more">
+					<ul>
+						<li data-id="33211574" data-title="creative idea and solution concept electric lamp" data-src="https://cdn5.vectorstock.com/i/thumbs/15/74/creative-idea-and-solution-concept-electric-lamp-vector-33211574.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/creative-idea-and-solution-concept-electric-lamp-vector-33211574" title="creative idea and solution concept electric lamp vector image"><noscript><img src="https://cdn5.vectorstock.com/i/thumbs/15/74/creative-idea-and-solution-concept-electric-lamp-vector-33211574.jpg" title="creative idea and solution concept electric lamp" alt="creative idea and solution concept electric lamp vector image"></noscript></a></li>
+						<li data-id="24965353" data-title="idea" data-src="https://cdn4.vectorstock.com/i/thumbs/53/53/idea-vector-24965353.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/idea-vector-24965353" title="idea vector image"><noscript><img src="https://cdn4.vectorstock.com/i/thumbs/53/53/idea-vector-24965353.jpg" title="idea" alt="idea vector image"></noscript></a></li>
+						<li data-id="22899767" data-title="collection decorative light bulbs lamps" data-src="https://cdn3.vectorstock.com/i/thumbs/97/67/collection-decorative-light-bulbs-lamps-vector-22899767.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/collection-decorative-light-bulbs-lamps-vector-22899767" title="collection decorative light bulbs lamps vector image"><noscript><img src="https://cdn3.vectorstock.com/i/thumbs/97/67/collection-decorative-light-bulbs-lamps-vector-22899767.jpg" title="collection decorative light bulbs lamps" alt="collection decorative light bulbs lamps vector image"></noscript></a></li>
+						<li data-id="23908055" data-title="light bulb with rays shine" data-src="https://cdn1.vectorstock.com/i/thumbs/80/55/light-bulb-with-rays-shine-vector-23908055.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/light-bulb-with-rays-shine-vector-23908055" title="light bulb with rays shine vector image"><noscript><img src="https://cdn1.vectorstock.com/i/thumbs/80/55/light-bulb-with-rays-shine-vector-23908055.jpg" title="light bulb with rays shine" alt="light bulb with rays shine vector image"></noscript></a></li>
+						<li data-id="30176173" data-title="set off and on realistic lamp or 3d lightbulb" data-src="https://cdn4.vectorstock.com/i/thumbs/61/73/set-off-and-on-realistic-lamp-or-3d-lightbulb-vector-30176173.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/set-off-and-on-realistic-lamp-or-3d-lightbulb-vector-30176173" title="set off and on realistic lamp or 3d lightbulb vector image"><noscript><img src="https://cdn4.vectorstock.com/i/thumbs/61/73/set-off-and-on-realistic-lamp-or-3d-lightbulb-vector-30176173.jpg" title="set off and on realistic lamp or 3d lightbulb" alt="set off and on realistic lamp or 3d lightbulb vector image"></noscript></a></li>
+						<li data-id="25808417" data-title="light bulb icon llightbulb idea logo concept" data-src="https://cdn3.vectorstock.com/i/thumbs/84/17/light-bulb-icon-llightbulb-idea-logo-concept-vector-25808417.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/light-bulb-icon-llightbulb-idea-logo-concept-vector-25808417" title="light bulb icon llightbulb idea logo concept vector image"><noscript><img src="https://cdn3.vectorstock.com/i/thumbs/84/17/light-bulb-icon-llightbulb-idea-logo-concept-vector-25808417.jpg" title="light bulb icon llightbulb idea logo concept" alt="light bulb icon llightbulb idea logo concept vector image"></noscript></a></li>
+						<li data-id="27408630" data-title="lightbulb graphic design template isolated" data-src="https://cdn1.vectorstock.com/i/thumbs/86/30/lightbulb-graphic-design-template-isolated-vector-27408630.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/lightbulb-graphic-design-template-isolated-vector-27408630" title="lightbulb graphic design template isolated vector image"><noscript><img src="https://cdn1.vectorstock.com/i/thumbs/86/30/lightbulb-graphic-design-template-isolated-vector-27408630.jpg" title="lightbulb graphic design template isolated" alt="lightbulb graphic design template isolated vector image"></noscript></a></li>
+						<li data-id="34271438" data-title="bulb flat related glyph icon" data-src="https://cdn4.vectorstock.com/i/thumbs/14/38/bulb-flat-related-glyph-icon-vector-34271438.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/bulb-flat-related-glyph-icon-vector-34271438" title="bulb flat related glyph icon vector image"><noscript><img src="https://cdn4.vectorstock.com/i/thumbs/14/38/bulb-flat-related-glyph-icon-vector-34271438.jpg" title="bulb flat related glyph icon" alt="bulb flat related glyph icon vector image"></noscript></a></li>
+						<li data-id="20784593" data-title="luminous lamp show thumb up" data-src="https://cdn4.vectorstock.com/i/thumbs/45/93/luminous-lamp-show-thumb-up-vector-20784593.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/luminous-lamp-show-thumb-up-vector-20784593" title="luminous lamp show thumb up vector image"><noscript><img src="https://cdn4.vectorstock.com/i/thumbs/45/93/luminous-lamp-show-thumb-up-vector-20784593.jpg" title="luminous lamp show thumb up" alt="luminous lamp show thumb up vector image"></noscript></a></li>
+						<li data-id="30611212" data-title="llightbulb idea logo concept" data-src="https://cdn3.vectorstock.com/i/thumbs/12/12/llightbulb-idea-logo-concept-vector-30611212.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/llightbulb-idea-logo-concept-vector-30611212" title="llightbulb idea logo concept vector image"><noscript><img src="https://cdn3.vectorstock.com/i/thumbs/12/12/llightbulb-idea-logo-concept-vector-30611212.jpg" title="llightbulb idea logo concept" alt="llightbulb idea logo concept vector image"></noscript></a></li>
+						<li data-id="30571785" data-title="light bulb" data-src="https://cdn1.vectorstock.com/i/thumbs/17/85/light-bulb-vector-30571785.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/light-bulb-vector-30571785" title="light bulb vector image"><noscript><img src="https://cdn1.vectorstock.com/i/thumbs/17/85/light-bulb-vector-30571785.jpg" title="light bulb" alt="light bulb vector image"></noscript></a></li>
+						<li data-id="21268449" data-title="bulb idea logo design concept template" data-src="https://cdn5.vectorstock.com/i/thumbs/84/49/bulb-idea-logo-design-concept-template-vector-21268449.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/bulb-idea-logo-design-concept-template-vector-21268449" title="bulb idea logo design concept template vector image"><noscript><img src="https://cdn5.vectorstock.com/i/thumbs/84/49/bulb-idea-logo-design-concept-template-vector-21268449.jpg" title="bulb idea logo design concept template" alt="bulb idea logo design concept template vector image"></noscript></a></li>
+						<li data-id="28897048" data-title="yellow light bulb with sun icon flat for eco" data-src="https://cdn4.vectorstock.com/i/thumbs/70/48/yellow-light-bulb-with-sun-icon-flat-for-eco-vector-28897048.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/yellow-light-bulb-with-sun-icon-flat-for-eco-vector-28897048" title="yellow light bulb with sun icon flat for eco vector image"><noscript><img src="https://cdn4.vectorstock.com/i/thumbs/70/48/yellow-light-bulb-with-sun-icon-flat-for-eco-vector-28897048.jpg" title="yellow light bulb with sun icon flat for eco" alt="yellow light bulb with sun icon flat for eco vector image"></noscript></a></li>
+						<li data-id="31771372" data-title="hand drawn bulb doodle icon isolated on white" data-src="https://cdn3.vectorstock.com/i/thumbs/13/72/hand-drawn-bulb-doodle-icon-isolated-on-white-vector-31771372.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/hand-drawn-bulb-doodle-icon-isolated-on-white-vector-31771372" title="hand drawn bulb doodle icon isolated on white vector image"><noscript><img src="https://cdn3.vectorstock.com/i/thumbs/13/72/hand-drawn-bulb-doodle-icon-isolated-on-white-vector-31771372.jpg" title="hand drawn bulb doodle icon isolated on white" alt="hand drawn bulb doodle icon isolated on white vector image"></noscript></a></li>
+						<li data-id="30707742" data-title="dark lamp with light and text" data-src="https://cdn3.vectorstock.com/i/thumbs/77/42/dark-lamp-with-light-and-text-vector-30707742.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/dark-lamp-with-light-and-text-vector-30707742" title="dark lamp with light and text vector image"><noscript><img src="https://cdn3.vectorstock.com/i/thumbs/77/42/dark-lamp-with-light-and-text-vector-30707742.jpg" title="dark lamp with light and text" alt="dark lamp with light and text vector image"></noscript></a></li>
+						<li data-id="27583591" data-title="light bulb power level icon isolated light" data-src="https://cdn2.vectorstock.com/i/thumbs/35/91/light-bulb-power-level-icon-isolated-light-vector-27583591.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/light-bulb-power-level-icon-isolated-light-vector-27583591" title="light bulb power level icon isolated light vector image"><noscript><img src="https://cdn2.vectorstock.com/i/thumbs/35/91/light-bulb-power-level-icon-isolated-light-vector-27583591.jpg" title="light bulb power level icon isolated light" alt="light bulb power level icon isolated light vector image"></noscript></a></li>
+						<li data-id="31567831" data-title="bulb illustration logo" data-src="https://cdn2.vectorstock.com/i/thumbs/78/31/bulb-illustration-logo-vector-31567831.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/bulb-illustration-logo-vector-31567831" title="bulb illustration logo vector image"><noscript><img src="https://cdn2.vectorstock.com/i/thumbs/78/31/bulb-illustration-logo-vector-31567831.jpg" title="bulb illustration logo" alt="bulb illustration logo vector image"></noscript></a></li>
+						<li data-id="29212287" data-title="bulb damage icon" data-src="https://cdn3.vectorstock.com/i/thumbs/22/87/bulb-damage-icon-vector-29212287.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/bulb-damage-icon-vector-29212287" title="bulb damage icon vector image"><noscript><img src="https://cdn3.vectorstock.com/i/thumbs/22/87/bulb-damage-icon-vector-29212287.jpg" title="bulb damage icon" alt="bulb damage icon vector image"></noscript></a></li>
+						<li data-id="32375766" data-title="light bulb icon" data-src="https://cdn2.vectorstock.com/i/thumbs/57/66/light-bulb-icon-vector-32375766.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/light-bulb-icon-vector-32375766" title="light bulb icon vector image"><noscript><img src="https://cdn2.vectorstock.com/i/thumbs/57/66/light-bulb-icon-vector-32375766.jpg" title="light bulb icon" alt="light bulb icon vector image"></noscript></a></li>
+						<li data-id="25171079" data-title="smart idea lamp logo" data-src="https://cdn5.vectorstock.com/i/thumbs/10/79/smart-idea-lamp-logo-vector-25171079.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/smart-idea-lamp-logo-vector-25171079" title="smart idea lamp logo vector image"><noscript><img src="https://cdn5.vectorstock.com/i/thumbs/10/79/smart-idea-lamp-logo-vector-25171079.jpg" title="smart idea lamp logo" alt="smart idea lamp logo vector image"></noscript></a></li>
+						<li data-id="21275203" data-title="electric light bulb logo" data-src="https://cdn4.vectorstock.com/i/thumbs/52/03/electric-light-bulb-logo-vector-21275203.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/electric-light-bulb-logo-vector-21275203" title="electric light bulb logo vector image"><noscript><img src="https://cdn4.vectorstock.com/i/thumbs/52/03/electric-light-bulb-logo-vector-21275203.jpg" title="electric light bulb logo" alt="electric light bulb logo vector image"></noscript></a></li>
+						<li data-id="32145085" data-title="bulb neon lamp good for cutting file" data-src="https://cdn1.vectorstock.com/i/thumbs/50/85/bulb-neon-lamp-good-for-cutting-file-vector-32145085.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/bulb-neon-lamp-good-for-cutting-file-vector-32145085" title="bulb neon lamp good for cutting file vector image"><noscript><img src="https://cdn1.vectorstock.com/i/thumbs/50/85/bulb-neon-lamp-good-for-cutting-file-vector-32145085.jpg" title="bulb neon lamp good for cutting file" alt="bulb neon lamp good for cutting file vector image"></noscript></a></li>
+						<li data-id="22745161" data-title="light bulb icon" data-src="https://cdn2.vectorstock.com/i/thumbs/51/61/light-bulb-icon-vector-22745161.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/light-bulb-icon-vector-22745161" title="light bulb icon vector image"><noscript><img src="https://cdn2.vectorstock.com/i/thumbs/51/61/light-bulb-icon-vector-22745161.jpg" title="light bulb icon" alt="light bulb icon vector image"></noscript></a></li>
+						<li data-id="27021225" data-title="set light bulbs light bulb collection in flat" data-src="https://cdn1.vectorstock.com/i/thumbs/12/25/set-light-bulbs-light-bulb-collection-in-flat-vector-27021225.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/set-light-bulbs-light-bulb-collection-in-flat-vector-27021225" title="set light bulbs light bulb collection in flat vector image"><noscript><img src="https://cdn1.vectorstock.com/i/thumbs/12/25/set-light-bulbs-light-bulb-collection-in-flat-vector-27021225.jpg" title="set light bulbs light bulb collection in flat" alt="set light bulbs light bulb collection in flat vector image"></noscript></a></li>
+						<li data-id="21289763" data-title="business concept cartoon african businessman" data-src="https://cdn4.vectorstock.com/i/thumbs/97/63/business-concept-cartoon-african-businessman-vector-21289763.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/business-concept-cartoon-african-businessman-vector-21289763" title="business concept cartoon african businessman vector image"><noscript><img src="https://cdn4.vectorstock.com/i/thumbs/97/63/business-concept-cartoon-african-businessman-vector-21289763.jpg" title="business concept cartoon african businessman" alt="business concept cartoon african businessman vector image"></noscript></a></li>
+						<li data-id="20999903" data-title="idea lamp light bulb ideal icon solution" data-src="https://cdn4.vectorstock.com/i/thumbs/99/03/idea-lamp-light-bulb-ideal-icon-solution-vector-20999903.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/idea-lamp-light-bulb-ideal-icon-solution-vector-20999903" title="idea lamp light bulb ideal icon solution vector image"><noscript><img src="https://cdn4.vectorstock.com/i/thumbs/99/03/idea-lamp-light-bulb-ideal-icon-solution-vector-20999903.jpg" title="idea lamp light bulb ideal icon solution" alt="idea lamp light bulb ideal icon solution vector image"></noscript></a></li>
+						<li data-id="23052617" data-title="abstract lamp logo" data-src="https://cdn3.vectorstock.com/i/thumbs/26/17/abstract-lamp-logo-vector-23052617.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/abstract-lamp-logo-vector-23052617" title="abstract lamp logo vector image"><noscript><img src="https://cdn3.vectorstock.com/i/thumbs/26/17/abstract-lamp-logo-vector-23052617.jpg" title="abstract lamp logo" alt="abstract lamp logo vector image"></noscript></a></li>
+						<li data-id="26702319" data-title="vintage light bulb in sketch style" data-src="https://cdn5.vectorstock.com/i/thumbs/23/19/vintage-light-bulb-in-sketch-style-vector-26702319.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/vintage-light-bulb-in-sketch-style-vector-26702319" title="vintage light bulb in sketch style vector image"><noscript><img src="https://cdn5.vectorstock.com/i/thumbs/23/19/vintage-light-bulb-in-sketch-style-vector-26702319.jpg" title="vintage light bulb in sketch style" alt="vintage light bulb in sketch style vector image"></noscript></a></li>
+						<li data-id="26789721" data-title="line art nature bulb logo icon vintage design" data-src="https://cdn2.vectorstock.com/i/thumbs/97/21/line-art-nature-bulb-logo-icon-vintage-design-vector-26789721.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/line-art-nature-bulb-logo-icon-vintage-design-vector-26789721" title="line art nature bulb logo icon vintage design vector image"><noscript><img src="https://cdn2.vectorstock.com/i/thumbs/97/21/line-art-nature-bulb-logo-icon-vintage-design-vector-26789721.jpg" title="line art nature bulb logo icon vintage design" alt="line art nature bulb logo icon vintage design vector image"></noscript></a></li>
+						<li data-id="29969284" data-title="light bulb idea logo" data-src="https://cdn5.vectorstock.com/i/thumbs/92/84/light-bulb-idea-logo-vector-29969284.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/light-bulb-idea-logo-vector-29969284" title="light bulb idea logo vector image"><noscript><img src="https://cdn5.vectorstock.com/i/thumbs/92/84/light-bulb-idea-logo-vector-29969284.jpg" title="light bulb idea logo" alt="light bulb idea logo vector image"></noscript></a></li>
+						<li class="more"><div><a href="https://www.vectorstock.com/royalty-free-vectors/vectors-similar-to_23707941" rel="nofollow"><span class="lrg">More Images…</span><span class="sml">More</span></a></div></li>
+					</ul>
+				</div>
+			</div>
+			<div id="group-artist" class="group">
+				<h6><span class="icon"></span><strong>More by <a href="https://www.vectorstock.com/royalty-free-vectors/vectors-by_3t0n4k" rel="nofollow">3t0n4k</a></strong></h6>
+
+				<div class="gallery large">
+					<ul>
+						<li data-src="https://cdn5.vectorstock.com/i/thumb-large/79/39/light-bulb-with-rays-shine-energy-and-idea-symbol-vector-23707939.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/light-bulb-with-rays-shine-energy-and-idea-symbol-vector-23707939" title="light bulb with rays shine energy and idea symbol vector image"><noscript><img src="https://cdn5.vectorstock.com/i/thumb-large/79/39/light-bulb-with-rays-shine-energy-and-idea-symbol-vector-23707939.jpg" title="light bulb with rays shine energy and idea symbol" alt="light bulb with rays shine energy and idea symbol vector image"></noscript></a></li>
+						<li data-src="https://cdn4.vectorstock.com/i/thumb-large/79/38/light-bulb-with-rays-shine-energy-and-idea-symbol-vector-23707938.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/light-bulb-with-rays-shine-energy-and-idea-symbol-vector-23707938" title="light bulb with rays shine energy and idea symbol vector image"><noscript><img src="https://cdn4.vectorstock.com/i/thumb-large/79/38/light-bulb-with-rays-shine-energy-and-idea-symbol-vector-23707938.jpg" title="light bulb with rays shine energy and idea symbol" alt="light bulb with rays shine energy and idea symbol vector image"></noscript></a></li>
+						<li data-src="https://cdn3.vectorstock.com/i/thumb-large/42/47/light-bulb-with-rays-shine-energy-and-idea-symbol-vector-23644247.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/light-bulb-with-rays-shine-energy-and-idea-symbol-vector-23644247" title="light bulb with rays shine energy and idea symbol vector image"><noscript><img src="https://cdn3.vectorstock.com/i/thumb-large/42/47/light-bulb-with-rays-shine-energy-and-idea-symbol-vector-23644247.jpg" title="light bulb with rays shine energy and idea symbol" alt="light bulb with rays shine energy and idea symbol vector image"></noscript></a></li>
+						<li data-src="https://cdn3.vectorstock.com/i/thumb-large/79/42/light-bulb-with-rays-shine-energy-and-idea-symbol-vector-23707942.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/light-bulb-with-rays-shine-energy-and-idea-symbol-vector-23707942" title="light bulb with rays shine energy and idea symbol vector image"><noscript><img src="https://cdn3.vectorstock.com/i/thumb-large/79/42/light-bulb-with-rays-shine-energy-and-idea-symbol-vector-23707942.jpg" title="light bulb with rays shine energy and idea symbol" alt="light bulb with rays shine energy and idea symbol vector image"></noscript></a></li>
+						<li data-src="https://cdn5.vectorstock.com/i/thumb-large/22/94/light-bulb-with-rays-shine-energy-and-idea-symbol-vector-29972294.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/light-bulb-with-rays-shine-energy-and-idea-symbol-vector-29972294" title="light bulb with rays shine energy and idea symbol vector image"><noscript><img src="https://cdn5.vectorstock.com/i/thumb-large/22/94/light-bulb-with-rays-shine-energy-and-idea-symbol-vector-29972294.jpg" title="light bulb with rays shine energy and idea symbol" alt="light bulb with rays shine energy and idea symbol vector image"></noscript></a></li>
+						<li data-src="https://cdn1.vectorstock.com/i/thumb-large/12/75/light-bulb-over-book-as-a-symbol-knowledge-vector-26001275.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/light-bulb-over-book-as-a-symbol-knowledge-vector-26001275" title="light bulb over book as a symbol knowledge vector image"><noscript><img src="https://cdn1.vectorstock.com/i/thumb-large/12/75/light-bulb-over-book-as-a-symbol-knowledge-vector-26001275.jpg" title="light bulb over book as a symbol knowledge" alt="light bulb over book as a symbol knowledge vector image"></noscript></a></li>
+						<li data-src="https://cdn5.vectorstock.com/i/thumb-large/12/74/emergence-ideas-brain-and-vector-26001274.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/emergence-ideas-brain-and-vector-26001274" title="emergence ideas brain and vector image"><noscript><img src="https://cdn5.vectorstock.com/i/thumb-large/12/74/emergence-ideas-brain-and-vector-26001274.jpg" title="emergence ideas brain and" alt="emergence ideas brain and vector image"></noscript></a></li>
+						<li data-src="https://cdn5.vectorstock.com/i/thumb-large/42/49/lamp-line-icon-on-white-background-vector-23644249.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/lamp-line-icon-on-white-background-vector-23644249" title="lamp line icon on white background vector image"><noscript><img src="https://cdn5.vectorstock.com/i/thumb-large/42/49/lamp-line-icon-on-white-background-vector-23644249.jpg" title="lamp line icon on white background" alt="lamp line icon on white background vector image"></noscript></a></li>
+						<li data-src="https://cdn5.vectorstock.com/i/thumb-large/12/84/web-design-light-bulb-over-book-as-a-symbol-vector-26001284.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/web-design-light-bulb-over-book-as-a-symbol-vector-26001284" title="web design light bulb over book as a symbol vector image"><noscript><img src="https://cdn5.vectorstock.com/i/thumb-large/12/84/web-design-light-bulb-over-book-as-a-symbol-vector-26001284.jpg" title="web design light bulb over book as a symbol" alt="web design light bulb over book as a symbol vector image"></noscript></a></li>
+						<li data-src="https://cdn1.vectorstock.com/i/thumb-large/12/85/emergence-ideas-brain-and-vector-26001285.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/emergence-ideas-brain-and-vector-26001285" title="emergence ideas brain and vector image"><noscript><img src="https://cdn1.vectorstock.com/i/thumb-large/12/85/emergence-ideas-brain-and-vector-26001285.jpg" title="emergence ideas brain and" alt="emergence ideas brain and vector image"></noscript></a></li>
+					</ul>
+				</div>
+				<div class="gallery small more">
+					<ul>
+						<li data-id="29964145" data-title="light bulb over book as a symbol knowledge" data-src="https://cdn1.vectorstock.com/i/thumbs/41/45/light-bulb-over-book-as-a-symbol-knowledge-vector-29964145.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/light-bulb-over-book-as-a-symbol-knowledge-vector-29964145" title="light bulb over book as a symbol knowledge vector image"><noscript><img src="https://cdn1.vectorstock.com/i/thumbs/41/45/light-bulb-over-book-as-a-symbol-knowledge-vector-29964145.jpg" title="light bulb over book as a symbol knowledge" alt="light bulb over book as a symbol knowledge vector image vector image"></noscript></a></li>
+						<li data-id="26001287" data-title="emergence ideas brain and" data-src="https://cdn3.vectorstock.com/i/thumbs/12/87/emergence-ideas-brain-and-vector-26001287.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/emergence-ideas-brain-and-vector-26001287" title="emergence ideas brain and vector image"><noscript><img src="https://cdn3.vectorstock.com/i/thumbs/12/87/emergence-ideas-brain-and-vector-26001287.jpg" title="emergence ideas brain and" alt="emergence ideas brain and vector image vector image"></noscript></a></li>
+						<li data-id="23644256" data-title="light bulb icon on white background energy" data-src="https://cdn2.vectorstock.com/i/thumbs/42/56/light-bulb-icon-on-white-background-energy-vector-23644256.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/light-bulb-icon-on-white-background-energy-vector-23644256" title="light bulb icon on white background energy vector image"><noscript><img src="https://cdn2.vectorstock.com/i/thumbs/42/56/light-bulb-icon-on-white-background-energy-vector-23644256.jpg" title="light bulb icon on white background energy" alt="light bulb icon on white background energy vector image vector image"></noscript></a></li>
+						<li data-id="23644254" data-title="lamp line icon on white background energy" data-src="https://cdn5.vectorstock.com/i/thumbs/42/54/lamp-line-icon-on-white-background-energy-vector-23644254.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/lamp-line-icon-on-white-background-energy-vector-23644254" title="lamp line icon on white background energy vector image"><noscript><img src="https://cdn5.vectorstock.com/i/thumbs/42/54/lamp-line-icon-on-white-background-energy-vector-23644254.jpg" title="lamp line icon on white background energy" alt="lamp line icon on white background energy vector image vector image"></noscript></a></li>
+						<li data-id="23707937" data-title="set light bulb icon energy and idea symbol" data-src="https://cdn3.vectorstock.com/i/thumbs/79/37/set-light-bulb-icon-energy-and-idea-symbol-vector-23707937.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/set-light-bulb-icon-energy-and-idea-symbol-vector-23707937" title="set light bulb icon energy and idea symbol vector image"><noscript><img src="https://cdn3.vectorstock.com/i/thumbs/79/37/set-light-bulb-icon-energy-and-idea-symbol-vector-23707937.jpg" title="set light bulb icon energy and idea symbol" alt="set light bulb icon energy and idea symbol vector image vector image"></noscript></a></li>
+						<li data-id="23644244" data-title="set light bulb logo energy and idea symbol" data-src="https://cdn5.vectorstock.com/i/thumbs/42/44/set-light-bulb-logo-energy-and-idea-symbol-vector-23644244.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/set-light-bulb-logo-energy-and-idea-symbol-vector-23644244" title="set light bulb logo energy and idea symbol vector image"><noscript><img src="https://cdn5.vectorstock.com/i/thumbs/42/44/set-light-bulb-logo-energy-and-idea-symbol-vector-23644244.jpg" title="set light bulb logo energy and idea symbol" alt="set light bulb logo energy and idea symbol vector image vector image"></noscript></a></li>
+						<li data-id="23531780" data-title="logo brain symbol creative ideas mind" data-src="https://cdn1.vectorstock.com/i/thumbs/17/80/logo-brain-symbol-creative-ideas-mind-vector-23531780.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/logo-brain-symbol-creative-ideas-mind-vector-23531780" title="logo brain symbol creative ideas mind vector image"><noscript><img src="https://cdn1.vectorstock.com/i/thumbs/17/80/logo-brain-symbol-creative-ideas-mind-vector-23531780.jpg" title="logo brain symbol creative ideas mind" alt="logo brain symbol creative ideas mind vector image vector image"></noscript></a></li>
+						<li data-id="23531771" data-title="logo brain symbol creative ideas mind" data-src="https://cdn2.vectorstock.com/i/thumbs/17/71/logo-brain-symbol-creative-ideas-mind-vector-23531771.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/logo-brain-symbol-creative-ideas-mind-vector-23531771" title="logo brain symbol creative ideas mind vector image"><noscript><img src="https://cdn2.vectorstock.com/i/thumbs/17/71/logo-brain-symbol-creative-ideas-mind-vector-23531771.jpg" title="logo brain symbol creative ideas mind" alt="logo brain symbol creative ideas mind vector image vector image"></noscript></a></li>
+						<li data-id="23531778" data-title="emblem brain symbol creative ideas mind" data-src="https://cdn4.vectorstock.com/i/thumbs/17/78/emblem-brain-symbol-creative-ideas-mind-vector-23531778.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/emblem-brain-symbol-creative-ideas-mind-vector-23531778" title="emblem brain symbol creative ideas mind vector image"><noscript><img src="https://cdn4.vectorstock.com/i/thumbs/17/78/emblem-brain-symbol-creative-ideas-mind-vector-23531778.jpg" title="emblem brain symbol creative ideas mind" alt="emblem brain symbol creative ideas mind vector image vector image"></noscript></a></li>
+						<li data-id="21104311" data-title="summer logo beautiful summer" data-src="https://cdn2.vectorstock.com/i/thumbs/43/11/summer-logo-beautiful-summer-vector-21104311.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/summer-logo-beautiful-summer-vector-21104311" title="summer logo beautiful summer vector image"><noscript><img src="https://cdn2.vectorstock.com/i/thumbs/43/11/summer-logo-beautiful-summer-vector-21104311.jpg" title="summer logo beautiful summer" alt="summer logo beautiful summer vector image vector image"></noscript></a></li>
+						<li data-id="23531769" data-title="brain logo template brain tech brain icon" data-src="https://cdn5.vectorstock.com/i/thumbs/17/69/brain-logo-template-brain-tech-brain-icon-vector-23531769.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/brain-logo-template-brain-tech-brain-icon-vector-23531769" title="brain logo template brain tech brain icon vector image"><noscript><img src="https://cdn5.vectorstock.com/i/thumbs/17/69/brain-logo-template-brain-tech-brain-icon-vector-23531769.jpg" title="brain logo template brain tech brain icon" alt="brain logo template brain tech brain icon vector image vector image"></noscript></a></li>
+						<li data-id="26001358" data-title="logo love tech heart technology concept design" data-src="https://cdn4.vectorstock.com/i/thumbs/13/58/logo-love-tech-heart-technology-concept-design-vector-26001358.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/logo-love-tech-heart-technology-concept-design-vector-26001358" title="logo love tech heart technology concept design vector image"><noscript><img src="https://cdn4.vectorstock.com/i/thumbs/13/58/logo-love-tech-heart-technology-concept-design-vector-26001358.jpg" title="logo love tech heart technology concept design" alt="logo love tech heart technology concept design vector image vector image"></noscript></a></li>
+						<li data-id="23531775" data-title="brain logo brainstorm think idea logo brain icon" data-src="https://cdn1.vectorstock.com/i/thumbs/17/75/brain-logo-brainstorm-think-idea-logo-brain-icon-vector-23531775.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/brain-logo-brainstorm-think-idea-logo-brain-icon-vector-23531775" title="brain logo brainstorm think idea logo brain icon vector image"><noscript><img src="https://cdn1.vectorstock.com/i/thumbs/17/75/brain-logo-brainstorm-think-idea-logo-brain-icon-vector-23531775.jpg" title="brain logo brainstorm think idea logo brain icon" alt="brain logo brainstorm think idea logo brain icon vector image vector image"></noscript></a></li>
+						<li data-id="26001356" data-title="logo love tech heart technology concept design" data-src="https://cdn2.vectorstock.com/i/thumbs/13/56/logo-love-tech-heart-technology-concept-design-vector-26001356.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/logo-love-tech-heart-technology-concept-design-vector-26001356" title="logo love tech heart technology concept design vector image"><noscript><img src="https://cdn2.vectorstock.com/i/thumbs/13/56/logo-love-tech-heart-technology-concept-design-vector-26001356.jpg" title="logo love tech heart technology concept design" alt="logo love tech heart technology concept design vector image vector image"></noscript></a></li>
+						<li data-id="23644252" data-title="concept an active human brain with the" data-src="https://cdn3.vectorstock.com/i/thumbs/42/52/concept-an-active-human-brain-with-the-vector-23644252.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/concept-an-active-human-brain-with-the-vector-23644252" title="concept an active human brain with the vector image"><noscript><img src="https://cdn3.vectorstock.com/i/thumbs/42/52/concept-an-active-human-brain-with-the-vector-23644252.jpg" title="concept an active human brain with the" alt="concept an active human brain with the vector image vector image"></noscript></a></li>
+						<li data-id="23826755" data-title="conceptual start up new business project take" data-src="https://cdn1.vectorstock.com/i/thumbs/67/55/conceptual-start-up-new-business-project-take-vector-23826755.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/conceptual-start-up-new-business-project-take-vector-23826755" title="conceptual start up new business project take vector image"><noscript><img src="https://cdn1.vectorstock.com/i/thumbs/67/55/conceptual-start-up-new-business-project-take-vector-23826755.jpg" title="conceptual start up new business project take" alt="conceptual start up new business project take vector image vector image"></noscript></a></li>
+						<li data-id="23824696" data-title="logo book shop template learning education book" data-src="https://cdn2.vectorstock.com/i/thumbs/46/96/logo-book-shop-template-learning-education-book-vector-23824696.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/logo-book-shop-template-learning-education-book-vector-23824696" title="logo book shop template learning education book vector image"><noscript><img src="https://cdn2.vectorstock.com/i/thumbs/46/96/logo-book-shop-template-learning-education-book-vector-23824696.jpg" title="logo book shop template learning education book" alt="logo book shop template learning education book vector image vector image"></noscript></a></li>
+						<li data-id="23890502" data-title="logo book shop template learning education book" data-src="https://cdn3.vectorstock.com/i/thumbs/05/02/logo-book-shop-template-learning-education-book-vector-23890502.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/logo-book-shop-template-learning-education-book-vector-23890502" title="logo book shop template learning education book vector image"><noscript><img src="https://cdn3.vectorstock.com/i/thumbs/05/02/logo-book-shop-template-learning-education-book-vector-23890502.jpg" title="logo book shop template learning education book" alt="logo book shop template learning education book vector image vector image"></noscript></a></li>
+						<li data-id="31214228" data-title="template logo for churches mountain calvary" data-src="https://cdn4.vectorstock.com/i/thumbs/42/28/template-logo-for-churches-mountain-calvary-vector-31214228.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/template-logo-for-churches-mountain-calvary-vector-31214228" title="template logo for churches mountain calvary vector image"><noscript><img src="https://cdn4.vectorstock.com/i/thumbs/42/28/template-logo-for-churches-mountain-calvary-vector-31214228.jpg" title="template logo for churches mountain calvary" alt="template logo for churches mountain calvary vector image vector image"></noscript></a></li>
+						<li data-id="31275205" data-title="man shoe icon on a white background" data-src="https://cdn1.vectorstock.com/i/thumbs/52/05/man-shoe-icon-on-a-white-background-vector-31275205.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/man-shoe-icon-on-a-white-background-vector-31275205" title="man shoe icon on a white background vector image"><noscript><img src="https://cdn1.vectorstock.com/i/thumbs/52/05/man-shoe-icon-on-a-white-background-vector-31275205.jpg" title="man shoe icon on a white background" alt="man shoe icon on a white background vector image vector image"></noscript></a></li>
+						<li class="more"><div><a href="https://www.vectorstock.com/royalty-free-vectors/vectors-by_3t0n4k" rel="nofollow"><span class="lrg">More Images…</span><span class="sml">More</span></a></div></li>
+					</ul>
+				</div>
+			</div>
+			<div id="group-keywords" class="group">
+				<h6><span class="icon"></span><strong>Related Searches</strong></h6>
+				<ul>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/symbol-vectors">Symbol</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/idea-vectors">Idea</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/rays-vectors">Rays</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/bulb-vectors">Bulb</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/shine-vectors">Shine</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/light-vectors">Light</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/energy-vectors">Energy</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/illustration-vectors">Illustration</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/vector-vectors">Vector</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/technology-vectors">Technology</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/ray-vectors">Ray</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/concept-vectors">Concept</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/solution-vectors">Solution</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/design-vectors">Design</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/invention-vectors">Invention</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/inspiration-vectors">Inspiration</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/isolated-vectors">Isolated</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/innovation-vectors">Innovation</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/efficient-vectors">Efficient</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/lightbulb-vectors">Lightbulb</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/graphic-vectors">Graphic</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/art-vectors">Art</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/illumination-vectors">Illumination</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/electric-vectors">Electric</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/creative-vectors">Creative</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/lamp-vectors">Lamp</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/glass-vectors">Glass</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/icon-vectors">Icon</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/sign-vectors">Sign</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/bright-vectors">Bright</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/power-vectors">Power</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/electricity-vectors">Electricity</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/emoji-vectors">Emoji</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/white-vectors">White</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/image-vectors">Image</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/clipart-vectors">Clipart</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/print-vectors">Print</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/colorful-vectors">Colorful</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/cute-vectors">Cute</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/decorative-vectors">Decorative</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/cartoon-vectors">Cartoon</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/light-bulb-vectors">Light Bulb</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/element-vectors">Element</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/picture-vectors">Picture</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/simple-vectors">Simple</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/style-vectors">Style</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/electrical-vectors">Electrical</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/flat-vectors">Flat</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/saving-vectors">Saving</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/fluorescent-vectors">Fluorescent</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/background-vectors">Background</a></li>
+				</ul>
+			</div>
+		</section>
+	</article>
+
+	<!-- Footer -->
+	<footer>
+
+		<div>
+		<div class="column c1">
+			<nav class="company">
+				<h4>VectorStock</h4>
+				<ul>
+					<li><a href="https://www.vectorstock.com/" title="Home">Home</a></li>
+					<li class="sel"><a href="https://www.vectorstock.com/free-vectors" title="Free Vectors">Free Vectors</a></li>
+					<li class="sel"><a href="https://www.vectorstock.com/royalty-free-vectors" title="All Royalty-Free Vectors">All Vectors</a></li>
+				</ul>
+				<ul>
+					<li><a href="https://www.vectorstock.com/what-is-a-vector" title="What is a Vector?">What is a Vector?</a></li>
+				</ul>
+				<ul>
+					<li class="sel"><a href="https://www.vectorstock.com/faq" title="Frequently Asked Questions"><span class="long">Frequently Asked Questions</span><span class="short">FAQs</span></a></li>
+					<li><a href="https://www.vectorstock.com/faq/members/terms-of-use" title="Terms &amp; Conditions">Terms &amp; Conditions</a></li>
+					<li class="sel"><a href="https://www.vectorstock.com/contact" title="Contact Us">Contact Us</a></li>
+				</ul>
+			</nav>
+		</div>
+		<div class="column c2">
+			<nav class="account">
+					<h4><span class="title">Account</span><span class="icon"></span></h4>
+					<ul>
+						<li><a href="https://www.vectorstock.com/signup" title="Join Now">Join Now</a></li>
+						<li><a href="https://www.vectorstock.com/pricing" title="Pricing">Pricing</a></li>
+						<li><a href="https://www.vectorstock.com/?signup=1&amp;contributor=1" title="Contributor Sign Up">Contributor Sign Up</a></li>
+						<li><a href="https://www.vectorstock.com/faq/artists/why-sell-at-vectorstock" title="Contributor FAQ">Contributor FAQ</a></li>
+					</ul>
+			</nav>
+		</div>
+		<div class="column c3">
+			<nav class="social">
+				<h4>Social</h4>
+				<ul>
+					<li class="facebook sel"><a href="https://www.facebook.com/VectorStock" target="_blank" rel="noreferrer"><span class="title">Facebook</span><span class="icon"></span></a></li>
+					<li class="pinterest sel"><a href="https://pinterest.com/vectorstock/" target="_blank" rel="noreferrer"><span class="title">Pinterest</span><span class="icon"></span></a></li>
+					<li class="twitter sel"><a href="https://twitter.com/VectorStock" target="_blank" rel="noreferrer"><span class="title">Twitter</span><span class="icon"></span></a></li>
+				</ul>
+			</nav>
+			<div class="signoff">
+				<h5><a href="https://www.vectorstock.com/" title="VectorStock®">VectorStock®</a></h5>
+				<p>VectorStock and the VectorStock logo are registered trademarks of VectorStock Media.<br>
+				© 2021. <span>All Rights Reserved.</span></p>
+			</div>
+		</div>
+	</div></footer>
+
+
+	<script src="./logo_files/f.txt"></script>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam-cell.nr-data.net","licenseKey":"02e09611df","applicationID":"156179534","transactionName":"ZV0ENRYCC0RYAkVbDVwXJRQXFwpaFhNeSwNeTB9MAhEAUhQXVFEWXUpJFw0GEg==","queueTime":0,"applicationTime":48,"atts":"SRoHQ14YGEo=","errorBeacon":"bam-cell.nr-data.net","agent":""}</script>
+
+
+</body></html>
