@@ -305,10 +305,10 @@ function QuoteGenerator() {
                     className={classes.progressModel}
                   />
                 </div>
-              ) : (
+              ) : ( 
                 <p class="text" style={{paddingLeft: "20px", paddingRight: "20px", opacity:"100%", color:"white", fontSize: "36px" }}>{quote}</p>
               )}
-              <div alignText = "right">
+              <div alignText = "right"> {/* styling author and above is styling the quote name*/}
               <p class="attr" style={{alignText: "right",  color:"white", fontSize: "30px"}}>- Quotify</p>
               {/* <hr class="line" /> */}
               </div>
@@ -316,15 +316,15 @@ function QuoteGenerator() {
           </section>
         </Grid>
         <Grid item 
-        className={classes.paper}
+        className={classes.paper} //line 86: this controls a lot of styling
         >
           <div display="flex" alignItems="center" justify="center">
             <img src={logo} alt="Quotify" width="30%" marginLeft="30%"/>
             <div style ={{"display": "flex", width:"100%"}}>
               
-            <form className={classes.form} noValidate onSubmit={handleSubmit}> 
+            <form className={classes.form} noValidate onSubmit={handleSubmit}>  
             <FormControl fullWidth className={clsx(classes.margin, classes.textField)}>
-                <InputLabel htmlFor="seed" 
+                <InputLabel htmlFor="seed" // for the input field if you want to change further go to line 108
                 style={{fontSize:"20px", marginLeft: "1%", marginTop: "0.3%"}}
                 >
                   Leave a phrase and let Quotify blow your mind
@@ -336,9 +336,8 @@ function QuoteGenerator() {
                   onChange={handleSeedChange}
                 />
                 </FormControl>
-              <FormControl fullWidth>
-                
-                    <FormControl
+              <FormControl fullWidth> 
+                    <FormControl // for the slider (go to line 117 also to change)
                       fullWidth
                       className={clsx(classes.margin, classes.slider)}
                     >
@@ -360,7 +359,7 @@ function QuoteGenerator() {
                       max={100}/>
                     </FormControl>
                     <br/>
-                    <FormControl
+                    <FormControl // for the slider (go to line 117 also to change)
                       fullWidth
                       className={clsx(classes.margin, classes.slider)}
                     >
@@ -384,7 +383,7 @@ function QuoteGenerator() {
                     </FormControl>
               </FormControl>
               <FormControl fullWidth >
-                <Button className = {classes.containedOrange}
+                <Button className = {classes.containedOrange} // for the generate quote button
                   type="submit"
                   fullWidth
                   disabled={generatingQuote}
