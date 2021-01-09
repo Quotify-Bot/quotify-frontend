@@ -113,10 +113,10 @@ const useStyles = makeStyles((theme) => ({
   slider: {
     marginTop: "30px",
     width: "100%",
-    // boxSizing: "border-box",
   },
   sliderLabel: {
     marginTop: "10px",
+    fontFamily: "Roboto"
   },
   buttonProgress: {
     color: green[500],
@@ -348,6 +348,7 @@ function QuoteGenerator() {
               alignItems: "center",
               backgroundColor: "black",
               opacity: "0.6",
+              fontFamily:"roboto"
             }}
           >
             <hr class="line" />
@@ -374,8 +375,9 @@ function QuoteGenerator() {
                   color: "white",
                   fontSize: "36px",
                 }}
-              >
+              > <b>
                 {quote}
+                </b>
               </p>
             )}
             <div alignText="right">
@@ -383,9 +385,10 @@ function QuoteGenerator() {
               {/* styling author and above is styling the quote name*/}
               <p
                 class="attr"
-                style={{ alignText: "right", color: "white", fontSize: "30px" }}
-              >
+                style={{ alignText: "right", color: "white", fontSize: "28px" }}
+              ><i>
                 - Quotify
+                </i>
               </p>
               {/* <hr class="line" /> */}
             </div>
@@ -397,9 +400,9 @@ function QuoteGenerator() {
         className={classes.paper} //line 86: this controls a lot of styling
       >
         <div display="flex" alignItems="center" justify="center">
-          <div style={{ display: "flex", width: "100%" }}>
-            <img src={logo} alt="Quotify" width="50%" marginLeft="30%" />
-            <form className={classes.form} noValidate onSubmit={handleSubmit}>
+          <div style={{ display: "flex", width: "100%", marginTop:"50px" }}>
+            <img src={logo} alt="Quotify" width="50%"  />
+            <form className={classes.form} noValidate onSubmit={handleSubmit} >
               <FormControl
                 fullWidth
                 className={clsx(classes.margin, classes.textField)}
@@ -410,6 +413,7 @@ function QuoteGenerator() {
                     fontSize: "20px",
                     marginLeft: "1%",
                     marginTop: "0.3%",
+                    fontFamily: "Roboto",
                   }}
                 >
                   Leave a phrase and let Quotify blow your mind
@@ -418,6 +422,7 @@ function QuoteGenerator() {
                   id="seed"
                   type="text"
                   value={nextSeed}
+                  borderColor="orange"
                   onChange={handleSeedChange}
                 />
               </FormControl>
