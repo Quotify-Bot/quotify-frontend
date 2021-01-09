@@ -84,9 +84,10 @@ const useStyles = makeStyles((theme) => ({
     height: "73%",
   },
   paper: {
-    margin: theme.spacing(8, 4),
-    height: "10%",
+    margin: theme.spacing(0, 2),
+    height: "1%",
     alignItems: "center",
+    flexDirection: "row",
   },
   avatar: {
     margin: theme.spacing(1),
@@ -393,8 +394,8 @@ function QuoteGenerator() {
         className={classes.paper} //line 86: this controls a lot of styling
       >
         <div display="flex" alignItems="center" justify="center">
-          <img src={logo} alt="Quotify" width="30%" marginLeft="30%" />
-          <div style={{ display: "flex", width: "50%" }}>
+          <div style={{ display: "flex", width: "100%" }}>
+            <img src={logo} alt="Quotify" width="50%" marginLeft="30%" />
             <form className={classes.form} noValidate onSubmit={handleSubmit}>
               <FormControl
                 fullWidth
