@@ -210,23 +210,24 @@ function QuoteGenerator() {
     getRandomImage();
     const str =
       nextSeed.length == 0
-        ? tagList[Math.floor(Math.random() * tagList.length)]
+        ? tagList[Math.floor(Math.random() * tagList.length)].replace(" ", "%20")
         : nextSeed;
+    const url = "https://quotify-engine-l6lhxur2aq-uc.a.run.app/generate/"+ 
+        str + 
+        "/" + 
+        minLength + 
+        "/" + 
+        maxLength + 
+        "/0.9/"
+    console.log(url)
     setQuote("");
     setAuthor("");
     axios
-      .get(
-        "https://quotify-engine-l6lhxur2aq-uc.a.run.app/generate/" +
-          str +
-          "/" +
-          minLength +
-          "/" +
-          maxLength +
-          "/0.9"
-      )
+      .get(url)
       .then(function (response) {
+        const quote = response["data"]["output"].replaceAll("+", " ")
         console.log("Response in submit: " + response["data"]["output"]);
-        setQuote(response["data"]["output"]);
+        setQuote(quote);
         setAuthor("Quotify");
         setGeneratingQuote(false);
       })
@@ -272,20 +273,22 @@ function QuoteGenerator() {
     getRandomImage();
     const str =
       nextSeed.length == 0
-        ? tagList[Math.floor(Math.random() * tagList.length)]
+        ? " "
         : nextSeed;
+    const url = "https://quotify-engine-l6lhxur2aq-uc.a.run.app/generate/"+ 
+                 str + 
+                 "/" + 
+                 minLength + 
+                 "/" + 
+                 maxLength + 
+                 "/0.9/"
+    // const newUrl = url.replaceAll(" ", "%20")
+    // console.log(newUrl)
     axios
-      .get(
-        "https://quotify-engine-l6lhxur2aq-uc.a.run.app/generate/" +
-          str +
-          "/" +
-          minLength +
-          "/" +
-          maxLength +
-          "/0.9/"
-      )
+      .get(url)
       .then(function (response) {
-        setQuote(response["data"]["output"]);
+        const quote = response["data"]["output"].replaceAll("+", " ")
+        setQuote(quote);
         setAuthor("Quotify");
         setGeneratingQuote(false);
         setLoadingSeed(false);
