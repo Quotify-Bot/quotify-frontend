@@ -1,7 +1,7 @@
 <br />
 <p align="center">
   <a href="https://quotifymyworld.netlify.app/">
-    <img src="src/assets/Projects Logo and Icon/Project Logo.png" alt="Logo" height="300">
+    <img src="src/assets/Project_Logo_Icons/Project_Logo.png" alt="Logo" height="300">
   </a>
 
   <p align="center">
