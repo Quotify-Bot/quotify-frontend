@@ -10,7 +10,7 @@
   </b>
   <b>·</b>
   <b>
-  <a href="https://hacknroll2021.devpost.com/">Devpost</a>
+  <a href="https://devpost.com/software/quotify-0w9k14#updates">Devpost</a>
   </b>
   </p>
 </p>

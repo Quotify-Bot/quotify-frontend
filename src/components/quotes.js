@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Button from "@material-ui/core/Button";
+import FormatQuoteIcon from "@material-ui/icons/FormatQuote";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import Slider from "@material-ui/core/Slider";
 import clsx from "clsx";
@@ -138,14 +139,14 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   containedOrange: {
-    color: theme.palette.getContrastText(orange[500]),
+    color: theme.palette.getContrastText(orange[800]),
     margin: theme.spacing(3, 0, 2),
-    backgroundColor: orange[500],
+    backgroundColor: orange[800],
     "&:hover": {
-      backgroundColor: orange[700],
+      backgroundColor: orange[800],
       // Reset on touch devices, it doesn't add specificity
       "@media (hover: none)": {
-        backgroundColor: orange[500],
+        backgroundColor: orange[800],
       },
     },
   },
@@ -400,9 +401,16 @@ function QuoteGenerator() {
         className={classes.paper} //line 86: this controls a lot of styling
       >
         <div display="flex" alignItems="center" justify="center">
-          <div style={{ display: "flex", width: "100%", marginTop:"50px" }}>
-            <img src={logo} alt="Quotify" width="50%"  />
-            <form className={classes.form} noValidate onSubmit={handleSubmit} >
+
+          <div style={{ display: "flex", width: "100%" }}>
+            <img
+              src={logo}
+              alt="Quotify"
+              width="50%"
+              paddingLeft="50%"
+              marginTop="40%"
+            />
+            <form className={classes.form} noValidate onSubmit={handleSubmit}>
               <FormControl
                 fullWidth
                 className={clsx(classes.margin, classes.textField)}
@@ -410,13 +418,13 @@ function QuoteGenerator() {
                 <InputLabel
                   htmlFor="seed" // for the input field if you want to change further go to line 108
                   style={{
-                    fontSize: "20px",
+                    fontSize: "15px",
                     marginLeft: "1%",
                     marginTop: "0.3%",
                     fontFamily: "Roboto",
                   }}
                 >
-                  Leave a phrase and let Quotify blow your mind
+                  Enter a phrase and let Quotify inspire you
                 </InputLabel>
                 <OutlinedInput
                   id="seed"
@@ -479,6 +487,7 @@ function QuoteGenerator() {
                   type="submit"
                   fullWidth
                   disabled={generatingQuote}
+                  startIcon={<FormatQuoteIcon />}
                 >
                   Generate Quote
                 </Button>
