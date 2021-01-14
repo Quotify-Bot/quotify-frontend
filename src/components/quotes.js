@@ -229,8 +229,6 @@ function QuoteGenerator() {
         setAuthor("Quotify");
         setGeneratingQuote(false);
       });
-    setLoadingSeed(false);
-    setGeneratingQuote(false);
     event.preventDefault();
   };
 
