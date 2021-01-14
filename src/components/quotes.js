@@ -210,7 +210,7 @@ function QuoteGenerator() {
       minLength +
       "/" +
       maxLength +
-      "/0.9/";
+      "/0.9";
     console.log(url);
     setQuote("");
     setAuthor("");
@@ -271,7 +271,7 @@ function QuoteGenerator() {
       minLength +
       "/" +
       maxLength +
-      "/0.9/";
+      "/0.9";
     axios
       .get(url)
       .then(function (response) {
