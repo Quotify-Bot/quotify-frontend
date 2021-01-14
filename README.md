@@ -5,6 +5,13 @@
   </a>
 
   <p align="center">
+   <a href="https://app.netlify.com/sites/quotifymyworlds/deploys">
+    <img src="https://api.netlify.com/api/v1/badges/06e8c7c3-78bc-4643-9985-ad640e7c9943/deploy-status">
+  </a>
+  <br />
+  Submission for <a href="https://hacknroll2021.devpost.com/">Hack&Roll 2021</a>
+    <br />
+    <br />
   <b>
     <a href="https://quotifymyworld.netlify.app/">Website</a>
   </b>
