@@ -5,7 +5,7 @@
   </a>
 
   <p align="center">
-   <a href="https://app.netlify.com/sites/quotifymyworlds/deploys">
+   <a href="https://app.netlify.com/sites/quotifymyworld/deploys">
     <img src="https://api.netlify.com/api/v1/badges/06e8c7c3-78bc-4643-9985-ad640e7c9943/deploy-status">
   </a>
   <br />
