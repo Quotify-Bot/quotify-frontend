@@ -1,7 +1,13 @@
+title: Quotify
+description: >- # this means to ignore newlines until "baseurl:"
+  AI-powered inspirational quote generator.
+baseurl: "/quotify-frontend" # the subpath of your site, e.g. /blog
+url: "https://quotify-bot.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+github_username:  Quotify-Bot
+
 last_edit_timestamp: true
 last_edit_time_format: "%b %e %Y at %I:%M %p"
 
 remote_theme: pmarsceill/just-the-docs
 plugins:
   - jekyll-relative-links
-
