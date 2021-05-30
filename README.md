@@ -26,11 +26,11 @@
 ## About
 Quotify helps you turn your words into inspiration by using Machine Learning to generate quotes. Simply enter a starting phrase and quotify will complete it to give you a compelling and inspiring quote.
 
-The model was trained by finetuning GPT2 (a state-of-the-art language model) on a quotes dataset. A list of quotes which were inspiring or motivating were compiled and used from this dataset. By doing GPT's ability to generate English text was tuned to generate quotes (tranfer learning). 
+The model was trained by finetuning GPT2 (a state-of-the-art language model) on a [quotes dataset](https://github.com/Quotify-Bot/model-training/releases/tag/dataset). A list of quotes which were inspiring or motivating were compiled and used from this dataset. By doing so, GPT2's ability to generate English text was tuned to generate quotes (transfer learning). 
 
 The code for the model training can be found [here](https://github.com/Quotify-Bot/model-training). 
 
-The model was deployed using [Docker](https://www.docker.com/) and [FastAPI](https://fastapi.tiangolo.com/). The code can be found [here](https://github.com/Quotify-Bot/quotify-backend).
+The model was deployed using [Docker](https://www.docker.com/) and [FastAPI](https://fastapi.tiangolo.com/). The code for deployment can be found [here](https://github.com/Quotify-Bot/quotify-backend).
 
 
 ## Inspiring Quotes
